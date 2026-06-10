@@ -3,6 +3,7 @@ const experience = [
     company: "CheckingIn",
     role: "Product Owner / Product Manager",
     period: "Apr 2025 – Present",
+    current: true,
     description:
       "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
@@ -16,6 +17,7 @@ const experience = [
     company: "Provincial Health Services Authority",
     role: "Team Lead & Product Owner",
     period: "Apr 2022 – Mar 2025",
+    current: false,
     description:
       "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
     bullets: [
@@ -29,6 +31,7 @@ const experience = [
     company: "Co.Lab",
     role: "Product Manager",
     period: "Jul 2023 – Apr 2024",
+    current: false,
     description:
       "Early-stage product accelerator building SaaS and mobile products through collaborative product development.",
     bullets: [
@@ -41,52 +44,93 @@ const experience = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
-        <span className="text-xs font-medium tracking-widest uppercase text-[#3B5BDB] mb-4 block">
-          Experience
-        </span>
-        <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-12">
+    <section id="experience" className="py-28 px-6 bg-[#F8FAFC]">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-px bg-[#4F6EF7]" />
+          <span className="text-xs font-semibold tracking-widest uppercase text-[#4F6EF7]">
+            Experience
+          </span>
+        </div>
+        <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-12">
           Where I&apos;ve worked.
         </h2>
 
-        <div className="space-y-10">
-          {experience.map((job, i) => (
-            <div key={i} className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-8">
-              <div>
-                <p className="text-xs text-[#6B7280] font-medium mb-1">{job.period}</p>
-                <p className="text-sm font-semibold text-[#111111]">{job.company}</p>
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-0 top-3 bottom-3 w-px bg-[#E2E8F0] hidden md:block ml-[11px]" />
+
+          <div className="space-y-8">
+            {experience.map((job, i) => (
+              <div key={i} className="md:pl-10 relative">
+                {/* Timeline dot */}
+                <div className={`absolute left-0 top-3 w-[23px] h-[23px] rounded-full border-2 hidden md:flex items-center justify-center ${
+                  job.current
+                    ? "border-[#4F6EF7] bg-[#4F6EF7]"
+                    : "border-[#CBD5E1] bg-white"
+                }`}>
+                  {job.current && (
+                    <div className="w-2 h-2 bg-white rounded-full" />
+                  )}
+                </div>
+
+                <div className="bg-white border border-[#E2E8F0] rounded-2xl p-7 hover:border-[#C7D2FE] hover:shadow-md transition-all duration-200">
+                  <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
+                    <div>
+                      <div className="flex items-center gap-3 mb-1">
+                        <h3 className="text-lg font-bold text-[#0F172A]">{job.role}</h3>
+                        {job.current && (
+                          <span className="text-xs font-semibold text-[#059669] bg-[#D1FAE5] border border-[#A7F3D0] px-2.5 py-1 rounded-full">
+                            Current
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-[#4F6EF7] font-semibold text-sm">{job.company}</p>
+                    </div>
+                    <span className="text-xs font-medium text-[#94A3B8] bg-[#F1F5F9] border border-[#E2E8F0] px-3 py-1.5 rounded-full whitespace-nowrap">
+                      {job.period}
+                    </span>
+                  </div>
+
+                  <p className="text-sm text-[#64748B] mb-5 leading-relaxed">{job.description}</p>
+
+                  <ul className="space-y-2.5">
+                    {job.bullets.map((bullet, j) => (
+                      <li key={j} className="flex gap-3 text-sm text-[#475569] leading-relaxed">
+                        <span className="text-[#4F6EF7] mt-[5px] flex-shrink-0">
+                          <svg width="7" height="7" viewBox="0 0 7 7" fill="currentColor">
+                            <circle cx="3.5" cy="3.5" r="3.5"/>
+                          </svg>
+                        </span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3 className="text-base font-semibold text-[#111111] mb-1">{job.role}</h3>
-                <p className="text-sm text-[#6B7280] mb-4">{job.description}</p>
-                <ul className="space-y-2">
-                  {job.bullets.map((bullet, j) => (
-                    <li key={j} className="flex gap-3 text-sm text-[#374151] leading-relaxed">
-                      <span className="text-[#3B5BDB] mt-1.5 flex-shrink-0">
-                        <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
-                          <circle cx="3" cy="3" r="3"/>
-                        </svg>
-                      </span>
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <div className="mt-16 pt-10 border-t border-[#E5E7EB]">
-          <h3 className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-4">
-            Education
-          </h3>
-          <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-8">
-            <p className="text-xs text-[#6B7280] font-medium">2017 – 2020</p>
-            <div>
-              <p className="text-sm font-semibold text-[#111111]">University of British Columbia</p>
-              <p className="text-sm text-[#6B7280]">Bachelor of Arts, Economics — Vancouver School of Economics</p>
+        <div className="mt-12 bg-white border border-[#E2E8F0] rounded-2xl p-7">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-8 h-8 bg-[#EEF2FF] border border-[#C7D2FE] rounded-lg flex items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 1L8.5 5H13L9.5 7.5L11 11.5L7 9L3 11.5L4.5 7.5L1 5H5.5L7 1Z" fill="#4F6EF7"/>
+              </svg>
             </div>
+            <h3 className="text-sm font-bold text-[#0F172A] uppercase tracking-widest">
+              Education
+            </h3>
+          </div>
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="font-bold text-[#0F172A]">University of British Columbia</p>
+              <p className="text-sm text-[#64748B] mt-1">Bachelor of Arts, Economics — Vancouver School of Economics</p>
+            </div>
+            <span className="text-xs font-medium text-[#94A3B8] bg-[#F1F5F9] border border-[#E2E8F0] px-3 py-1.5 rounded-full">
+              2017 – 2020
+            </span>
           </div>
         </div>
       </div>

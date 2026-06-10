@@ -94,48 +94,69 @@ export default function Projects() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <section id="projects" className="py-24 px-6 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <span className="text-xs font-medium tracking-widest uppercase text-[#3B5BDB] mb-4 block">
-          Projects &amp; Work
-        </span>
-        <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-12">
+    <section id="projects" className="py-28 px-6 bg-white">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-px bg-[#4F6EF7]" />
+          <span className="text-xs font-semibold tracking-widest uppercase text-[#4F6EF7]">
+            Projects &amp; Work
+          </span>
+        </div>
+        <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-3">
           What I&apos;ve built and shipped.
         </h2>
+        <p className="text-[#64748B] mb-12 text-lg">
+          Click any project to read the full case study.
+        </p>
 
         <div className="space-y-4">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
-              className="border border-[#E5E7EB] rounded-xl overflow-hidden"
+              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
+                expanded === project.id
+                  ? "border-[#4F6EF7] shadow-lg shadow-[#4F6EF7]/10"
+                  : "border-[#E2E8F0] hover:border-[#C7D2FE] hover:shadow-md"
+              }`}
             >
               <button
                 onClick={() =>
                   setExpanded(expanded === project.id ? null : project.id)
                 }
-                className="w-full text-left p-6 hover:bg-[#FAFAFA] transition-colors"
+                className="w-full text-left p-7 transition-colors"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-medium text-[#6B7280] bg-[#F3F4F6] px-2.5 py-1 rounded-full">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
+                        index === 0
+                          ? "text-[#4F6EF7] bg-[#EEF2FF] border border-[#C7D2FE]"
+                          : "text-[#64748B] bg-[#F1F5F9] border border-[#E2E8F0]"
+                      }`}>
                         {project.label}
                       </span>
+                      {index === 0 && (
+                        <span className="text-xs font-semibold text-[#059669] bg-[#D1FAE5] border border-[#A7F3D0] px-3 py-1 rounded-full">
+                          Featured
+                        </span>
+                      )}
                     </div>
-                    <h3 className="text-lg font-semibold text-[#111111] mb-1">
+                    <h3 className="text-xl font-bold text-[#0F172A] mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-[#6B7280]">{project.tagline}</p>
+                    <p className="text-sm text-[#64748B] leading-relaxed">{project.tagline}</p>
                   </div>
                   <div className="flex-shrink-0 mt-1">
                     <div
-                      className={`w-6 h-6 flex items-center justify-center text-[#6B7280] transition-transform duration-200 ${
-                        expanded === project.id ? "rotate-180" : ""
+                      className={`w-8 h-8 flex items-center justify-center rounded-full border transition-all duration-300 ${
+                        expanded === project.id
+                          ? "border-[#4F6EF7] bg-[#4F6EF7] text-white rotate-180"
+                          : "border-[#E2E8F0] text-[#94A3B8]"
                       }`}
                     >
-                      <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
                         <path
-                          d="M1 1l6 6 6-6"
+                          d="M1 1l5 5 5-5"
                           stroke="currentColor"
                           strokeWidth="1.5"
                           strokeLinecap="round"
@@ -146,11 +167,11 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-5">
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-xs text-[#3B5BDB] bg-[#EEF2FF] px-2.5 py-1 rounded-full"
+                      className="text-xs font-medium text-[#4F6EF7] bg-[#EEF2FF] px-3 py-1.5 rounded-lg"
                     >
                       {t}
                     </span>
@@ -159,17 +180,17 @@ export default function Projects() {
               </button>
 
               {expanded === project.id && (
-                <div className="border-t border-[#E5E7EB] px-6 py-6 bg-[#FAFAFA]">
-                  <p className="text-[#374151] mb-8 text-base leading-relaxed font-medium">
+                <div className="border-t border-[#EEF2FF] px-7 py-8 bg-[#F8FAFC]">
+                  <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
                     {project.summary}
                   </p>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-8">
                     {project.sections.map((section) => (
-                      <div key={section.heading}>
-                        <h4 className="text-sm font-semibold text-[#111111] mb-2 uppercase tracking-wider">
+                      <div key={section.heading} className="bg-white border border-[#E2E8F0] rounded-xl p-5">
+                        <h4 className="text-xs font-bold text-[#4F6EF7] mb-3 uppercase tracking-widest">
                           {section.heading}
                         </h4>
-                        <p className="text-[#374151] leading-relaxed text-sm">
+                        <p className="text-[#475569] leading-relaxed text-sm">
                           {section.body}
                         </p>
                       </div>
