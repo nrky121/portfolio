@@ -5,7 +5,7 @@ const experience = [
     period: "Apr 2025 – Present",
     current: true,
     description:
-      "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
+      "Mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool to support healing, treatment pathways, and cultural connection.",
     bullets: [
       "Led discovery and delivery for operational workflows across intake, referral, and onboarding using customer interviews and usage data to guide roadmap priorities.",
       "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",

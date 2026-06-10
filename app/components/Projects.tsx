@@ -65,26 +65,26 @@ const projects = [
     id: "checkingin",
     label: "CheckingIn",
     title: "Intake and Onboarding Workflows",
-    tagline: "Redesigned first-run experience and intake flows for a B2B SaaS care coordination platform.",
-    tech: ["B2B SaaS", "User Research", "Prototyping", "Conversion Optimization"],
+    tagline: "Drove discovery and delivery across the mobile app and web platform at CheckingIn.",
+    tech: ["Mobile App", "Web Platform", "User Research", "Prototyping", "Conversion Optimization"],
     summary:
-      "Drove roadmap priorities using customer interviews and usage data. Built prototypes directly to validate solutions before engineering handoff, reducing rework by 25% and improving trial-to-paid conversion.",
+      "CheckingIn is a mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool supporting detox, treatment, and aftercare pathways. I drove roadmap priorities using customer interviews and usage data, building prototypes directly to validate solutions before engineering handoff.",
     sections: [
+      {
+        heading: "The Product",
+        body: "CheckingIn delivers two interconnected products: a culture app that supports language learning, teachings, and community connection, and a care navigation platform that guides members through intake, referral, treatment, and aftercare. Both ship across mobile and web, and the products are customized for each Indigenous nation.",
+      },
       {
         heading: "The Problem",
         body: "Organizations trialing the platform were hitting friction early. Onboarding steps didn't map to how their teams actually worked, and intake workflows had unnecessary steps that slowed adoption. Drop-off was happening before users reached the core value of the product.",
       },
       {
         heading: "What I Did",
-        body: "Led discovery using customer interviews and usage data to identify where friction was highest. Built prototypes directly to validate solutions with real users before engineering got involved, giving the team clearer requirements and reducing back-and-forth during development.",
-      },
-      {
-        heading: "Outcomes",
-        body: "Reduced development rework by approximately 25% through earlier validation cycles. Improved onboarding and first-run workflows by removing low-value steps, helping organizations adopt faster and improving trial-to-paid conversion.",
+        body: "Led discovery and delivery for operational workflows across intake, referral, and onboarding. Used customer interviews and usage data to identify where friction was highest, then built prototypes directly to validate solutions before engineering got involved. Managed backlog, sprint planning, stakeholder demos, and release execution across a distributed team.",
       },
       {
         heading: "Hands-On Prototyping",
-        body: "Building prototypes myself rather than describing requirements in documents changed the quality of feedback I got from users and stakeholders. When people can click through something real, they give specific, actionable input. It also gave engineering a much clearer picture of what done looked like before a line of production code was written.",
+        body: "Building prototypes myself rather than describing requirements in documents changed the quality of feedback I got from users and stakeholders. When people can click through something real, they give specific, actionable input. It also gave engineering a much clearer picture of what done looked like before a line of production code was written, reducing rework by roughly 25%.",
       },
     ],
   },
