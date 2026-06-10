@@ -41,7 +41,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com/in/ryan"
+                href="https://linkedin.com/in/ryngai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-sm text-slate-300 hover:text-white transition-colors group"
@@ -69,12 +69,12 @@ export default function Contact() {
             </div>
 
             <p className="text-sm text-slate-400 mb-8 leading-relaxed">
-              Product Owner at CheckingIn — actively exploring new opportunities in enterprise SaaS and AI-driven platforms.
+              Product Owner at CheckingIn, actively exploring new opportunities in enterprise SaaS and AI-driven platforms.
             </p>
 
             <div className="space-y-3">
               {[
-                { icon: "📍", label: "Based in Canada — Remote-friendly" },
+                { icon: "📍", label: "Based in Canada, Remote-friendly" },
                 { icon: "🎯", label: "Focus: Enterprise SaaS, B2B, AI" },
                 { icon: "⚡", label: "Open to: TPO, PM, Sr. PM roles" },
               ].map((item) => (

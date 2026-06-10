@@ -8,7 +8,7 @@ const experience = [
       "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
       "Led discovery and delivery for operational workflows across intake, referral, and onboarding using customer interviews and usage data to guide roadmap priorities.",
-      "Partnered with engineering and design to prototype solutions using AI tools, reducing development rework by ~25% through earlier validation and clearer requirements.",
+      "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",
       "Improved onboarding and first-run workflows by removing low-value steps, improving trial-to-paid conversion.",
       "Managed backlog prioritization, sprint planning, stakeholder demos, and release execution across distributed teams.",
     ],
@@ -19,12 +19,12 @@ const experience = [
     period: "Apr 2022 – Mar 2025",
     current: false,
     description:
-      "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
+      "PHSA delivers enterprise digital health platforms across British Columbia, including CareConnect, the province's clinical information system.",
     bullets: [
-      "Led product strategy and delivery for CareConnect, an enterprise care coordination and referral platform used by clinical and operational teams across BC.",
-      "Translated complex operational workflows into prioritized product improvements that reduced manual coordination and duplicate data entry by 30%.",
-      "Collaborated with engineering on integrations, release sequencing, and stakeholder alignment to improve delivery reliability across interconnected enterprise systems.",
-      "Supported rollout planning, user adoption, and cross-functional coordination across clinical, operational, and technical stakeholder groups.",
+      "Led product strategy and delivery for CareConnect, BC's provincial clinical information system giving clinicians across all health authorities a single, secure view of patient health records.",
+      "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30%.",
+      "Collaborated with engineering on health authority system integrations, release sequencing, and stakeholder alignment to improve delivery reliability across interconnected provincial systems.",
+      "Coordinated rollout planning, user adoption, and cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
     ],
   },
   {
@@ -126,7 +126,7 @@ export default function Experience() {
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <p className="font-bold text-[#0F172A]">University of British Columbia</p>
-              <p className="text-sm text-[#64748B] mt-1">Bachelor of Arts, Economics — Vancouver School of Economics</p>
+              <p className="text-sm text-[#64748B] mt-1">Bachelor of Arts, Economics · Vancouver School of Economics</p>
             </div>
             <span className="text-xs font-medium text-[#94A3B8] bg-[#F1F5F9] border border-[#E2E8F0] px-3 py-1.5 rounded-full">
               2017 – 2020

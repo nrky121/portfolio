@@ -10,11 +10,11 @@ const projects = [
     tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     summary:
-      "Sales and ops teams lose context when contact history, follow-ups, and relationship data aren't captured reliably — the same data trust problem Riva's customers face at enterprise scale.",
+      "Sales and ops teams lose context when contact history, follow-ups, and relationship data aren't captured reliably. It's the same data trust problem Riva's customers face at enterprise scale.",
     sections: [
       {
         heading: "The Problem",
-        body: "When relationship data lives across spreadsheets, email threads, and disconnected tools, it goes stale fast. Follow-ups are missed, deals fall through cracks, and every new team member starts from zero. I wanted to understand this problem space from the inside — not just as a PM describing it, but as someone who had to model it, build it, and ship it.",
+        body: "When relationship data lives across spreadsheets, email threads, and disconnected tools, it goes stale fast. Follow-ups are missed, deals fall through cracks, and every new team member starts from zero. I wanted to understand this problem space from the inside: not just as a PM describing it, but as someone who had to model it, build it, and ship it.",
       },
       {
         heading: "What I Built",
@@ -22,15 +22,15 @@ const projects = [
       },
       {
         heading: "Key Decisions",
-        body: "I enforced data integrity at the schema layer — no orphaned records, no nullable fields where data should always exist. I designed permission boundaries early so each user only sees their own data, which mirrors the access control complexity Riva manages across enterprise tenants. Keeping the model strict meant the UI could stay simple.",
+        body: "I enforced data integrity at the schema layer with no orphaned records and no nullable fields where data should always exist. I designed permission boundaries early so each user only sees their own data, which mirrors the access control complexity Riva manages across enterprise tenants. Keeping the model strict meant the UI could stay simple.",
       },
       {
         heading: "What I Learned",
-        body: "When the data model is clean, every downstream workflow is easier to build and easier to use. When it's not, every screen becomes a workaround. This is exactly the tradeoff Riva manages — clean, trusted activity data as the foundation for everything else. Building from scratch gave me ground-level understanding of where data quality breaks down and why syncing across systems is hard.",
+        body: "When the data model is clean, every downstream workflow is easier to build and easier to use. When it's not, every screen becomes a workaround. That's exactly the tradeoff Riva manages: clean, trusted activity data as the foundation for everything else. Building from scratch gave me ground-level understanding of where data quality breaks down and why syncing across systems is hard.",
       },
       {
         heading: "Connection to Riva",
-        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built the thing Riva's customers use, which means I understand the problem space — not just the surface. I know what breaks when data is inconsistent, and I know what it looks like when it works.",
+        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built the thing Riva's customers use, which means I understand the problem space at a level beyond surface familiarity. I know what breaks when data is inconsistent, and I know what it looks like when it works.",
       },
     ],
   },
@@ -38,53 +38,53 @@ const projects = [
     id: "careconnect",
     label: "PHSA",
     title: "CareConnect",
-    tagline: "Enterprise care coordination platform serving clinical teams across British Columbia.",
-    tech: ["Enterprise SaaS", "Agile", "Stakeholder Management", "Integrations"],
+    tagline: "BC's provincial clinical information system giving clinicians a single view of patient health records across all health authorities.",
+    tech: ["Provincial Health Platform", "Enterprise Integrations", "Agile Delivery", "Stakeholder Management"],
     summary:
-      "Led product strategy and delivery for a care coordination and referral platform used by clinical and operational teams province-wide, reducing manual coordination by 30%.",
+      "Led product strategy and delivery for CareConnect, BC's provincial clinical information system. Clinicians across all health authorities use it as their single, secure point of access to patient health data regardless of where in the province that care was delivered.",
     sections: [
       {
         heading: "The Problem",
-        body: "Clinical teams were spending significant time on manual coordination — phone calls, duplicate data entry, and fragmented referral workflows across disconnected systems. The platform needed to become the reliable backbone for care transitions across BC.",
+        body: "BC's health system spans six health authorities, each running different clinical systems. Clinicians treating a patient often had no visibility into care delivered elsewhere in the province, leading to repeated tests, phone calls between facilities, and decisions made without the full picture. CareConnect was built to solve this by aggregating clinical data into one secure provincial viewer.",
       },
       {
         heading: "What I Did",
-        body: "Led product strategy and delivery for CareConnect, translating complex operational workflows into prioritized product improvements. Collaborated with engineering on integrations and release sequencing while managing alignment across clinical, operational, and technical stakeholder groups.",
+        body: "Served as Team Lead and Product Owner, responsible for product strategy and delivery across the platform. Translated complex clinical and operational workflow needs into prioritized product improvements. Managed integrations with health authority systems, coordinated release sequencing, and led cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
       },
       {
         heading: "Outcomes",
-        body: "Reduced manual coordination and duplicate data entry by 30%. Improved delivery reliability across interconnected enterprise systems. Supported rollout and adoption across a diverse stakeholder base with high compliance and operational stakes.",
+        body: "Reduced manual coordination and duplicate data entry by 30%. Improved delivery reliability across interconnected provincial systems. Supported rollout planning and user adoption across a large, geographically distributed stakeholder base with high compliance and patient safety stakes.",
       },
       {
         heading: "Why It Matters",
-        body: "Enterprise health platforms and enterprise revenue platforms share the same core challenge: complex, high-stakes workflows where data quality and system reliability directly affect outcomes. The lessons from CareConnect — stakeholder alignment, integration sequencing, data trust — translate directly to what Riva builds.",
+        body: "Running a provincial clinical information system means managing data integrity, access control, and multi-system integrations under real stakes. The same principles that make CareConnect reliable are what make enterprise data platforms like Riva trustworthy: clean data, clear permissions, and integration sequencing done carefully.",
       },
     ],
   },
   {
     id: "checkingin",
     label: "CheckingIn",
-    title: "Intake & Onboarding Workflows",
+    title: "Intake and Onboarding Workflows",
     tagline: "Redesigned first-run experience and intake flows for a B2B SaaS care coordination platform.",
-    tech: ["B2B SaaS", "User Research", "AI Prototyping", "Conversion Optimization"],
+    tech: ["B2B SaaS", "User Research", "Prototyping", "Conversion Optimization"],
     summary:
-      "Drove roadmap priorities using customer interviews and usage data. Partnered with engineering to prototype with AI tools, reducing rework by 25% and improving trial-to-paid conversion.",
+      "Drove roadmap priorities using customer interviews and usage data. Built prototypes directly to validate solutions before engineering handoff, reducing rework by 25% and improving trial-to-paid conversion.",
     sections: [
       {
         heading: "The Problem",
-        body: "Organizations trialing the platform were hitting friction early — onboarding steps that didn't map to how their teams actually worked, and intake workflows with unnecessary steps that slowed adoption. Drop-off was happening before users reached the core value.",
+        body: "Organizations trialing the platform were hitting friction early. Onboarding steps didn't map to how their teams actually worked, and intake workflows had unnecessary steps that slowed adoption. Drop-off was happening before users reached the core value of the product.",
       },
       {
         heading: "What I Did",
-        body: "Led discovery using customer interviews and usage data to identify where friction was highest. Partnered with engineering and design to prototype solutions using AI tools, enabling earlier validation and clearer requirements before full development began.",
+        body: "Led discovery using customer interviews and usage data to identify where friction was highest. Built prototypes directly to validate solutions with real users before engineering got involved, giving the team clearer requirements and reducing back-and-forth during development.",
       },
       {
         heading: "Outcomes",
         body: "Reduced development rework by approximately 25% through earlier validation cycles. Improved onboarding and first-run workflows by removing low-value steps, helping organizations adopt faster and improving trial-to-paid conversion.",
       },
       {
-        heading: "AI-Assisted Product Development",
-        body: "Using AI tools in the prototyping phase wasn't a shortcut — it was a forcing function for better requirements. When you can show a working prototype early, stakeholders give more useful feedback and engineering has clearer scope. This approach changed how I think about the discovery-to-delivery handoff.",
+        heading: "Hands-On Prototyping",
+        body: "Building prototypes myself rather than describing requirements in documents changed the quality of feedback I got from users and stakeholders. When people can click through something real, they give specific, actionable input. It also gave engineering a much clearer picture of what done looked like before a line of production code was written.",
       },
     ],
   },

@@ -7,7 +7,7 @@ const skills = [
   "Agile / Scrum",
   "Acceptance Criteria",
   "CRM & Data Models",
-  "AI-Assisted Prototyping",
+  "Hands-On Prototyping",
   "User Research",
   "Enterprise SaaS",
   "Cross-Functional Delivery",
@@ -34,10 +34,10 @@ export default function About() {
                 I&apos;m a Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning operational complexity into clear, shippable product decisions.
               </p>
               <p>
-                At PHSA I led delivery for CareConnect, an enterprise care coordination platform used across British Columbia — working across clinical, technical, and operational stakeholders to reduce manual data entry and improve system reliability.
+                At PHSA I led delivery for CareConnect, BC's provincial clinical information system used by clinicians across all health authorities to access patient records from a single secure platform.
               </p>
               <p>
-                At CheckingIn I drive roadmap priorities using customer interviews and usage data, and partner with engineering to prototype faster using AI tools.
+                At CheckingIn I drive roadmap priorities using customer interviews and usage data, and build prototypes myself to validate solutions before handing off to engineering.
               </p>
               <p>
                 I&apos;m comfortable in technical conversations, fluent in agile delivery, and obsessed with data quality as a foundation for everything else.
