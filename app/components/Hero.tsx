@@ -55,9 +55,9 @@ export default function Hero() {
         {/* Stats row */}
         <div className="fade-up fade-up-delay-4 mt-16 pt-10 border-t border-white/10 flex flex-wrap gap-10">
           {[
-            { value: "3+", label: "Years in Product" },
-            { value: "30%", label: "Coordination Reduced at PHSA" },
-            { value: "25%", label: "Rework Cut with AI Prototyping" },
+            { value: "4+", label: "Years in B2B SaaS" },
+            { value: "150+", label: "User Stories Shipped" },
+            { value: "5", label: "Modules Owned" },
             { value: "CSPO", label: "Certified Scrum Product Owner" },
           ].map((stat) => (
             <div key={stat.label}>
