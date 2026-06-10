@@ -41,7 +41,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com/in/ryngai"
+                href="http://www.linkedin.com/in/ryankyngai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-sm text-slate-300 hover:text-white transition-colors group"
