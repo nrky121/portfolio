@@ -188,6 +188,15 @@ export default function Projects() {
                   <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
                     {project.summary}
                   </p>
+                  {project.id === "crm" && (
+                    <div className="-mx-7 mb-10">
+                      <img
+                        src="/crm.gif"
+                        alt="Simple CRM walkthrough"
+                        className="w-full rounded-xl"
+                      />
+                    </div>
+                  )}
                   {"images" in project && project.images && (
                     <div className="-mx-7 grid grid-cols-1 md:grid-cols-2 gap-px mb-10">
                       {project.images.map((img) => (
