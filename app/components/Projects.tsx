@@ -127,14 +127,18 @@ export default function Projects() {
               <button
                 onClick={(e) => {
                   const isExpanding = expanded !== project.id;
-                  const scrollY = window.scrollY;
+                  const card = e.currentTarget.parentElement as HTMLElement;
                   e.currentTarget.blur();
                   setExpanded(expanded === project.id ? null : project.id);
                   if (isExpanding) {
                     requestAnimationFrame(() => {
-                      document.documentElement.style.scrollBehavior = "auto";
-                      window.scrollTo(0, scrollY);
-                      document.documentElement.style.scrollBehavior = "";
+                      const rect = card.getBoundingClientRect();
+                      const NAV = 72;
+                      if (rect.top < NAV) {
+                        document.documentElement.style.scrollBehavior = "auto";
+                        window.scrollTo(0, window.scrollY + rect.top - NAV);
+                        document.documentElement.style.scrollBehavior = "";
+                      }
                     });
                   }
                 }}
