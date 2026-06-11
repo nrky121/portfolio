@@ -196,6 +196,7 @@ export default function Projects() {
                         alt="CareConnect screenshot"
                         className="w-full rounded-xl"
                       />
+                      <p className="mt-2 mb-4 text-xs text-[#94A3B8] text-center px-4">Community Documents view showing cross-system data aggregation across BC health authorities</p>
                     </div>
                   )}
                   {project.id === "crm" && (
