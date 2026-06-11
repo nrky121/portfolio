@@ -30,8 +30,8 @@ export default function Hero() {
         </h1>
 
         <p className="fade-up fade-up-delay-3 text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed mb-12">
-          I close the gap between complex workflows
-          <br className="hidden md:block" /> and products people actually use.
+          I turn integration complexity into products
+          <br className="hidden md:block" /> that enterprise teams actually trust.
         </p>
 
         <div className="fade-up fade-up-delay-4 flex flex-wrap items-center gap-4">

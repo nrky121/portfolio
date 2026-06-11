@@ -23,7 +23,7 @@ const experience = [
     bullets: [
       "Led product strategy and delivery for CareConnect, BC's provincial clinical information system giving clinicians across all health authorities a single, secure view of patient health records.",
       "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30%.",
-      "Collaborated with engineering on health authority system integrations, release sequencing, and stakeholder alignment to improve delivery reliability across interconnected provincial systems.",
+      "Collaborated with engineering teams on cross-system health authority integrations, ensuring data consistency and reliable sync across interconnected provincial platforms.",
       "Coordinated rollout planning, user adoption, and cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
     ],
   },
@@ -31,6 +31,7 @@ const experience = [
     company: "Co.Lab",
     role: "Product Manager",
     period: "Jul 2023 – Apr 2024",
+    subtitle: "Concurrent with PHSA role",
     current: false,
     description:
       "Early-stage product accelerator building SaaS and mobile products through collaborative product development.",
@@ -87,9 +88,14 @@ export default function Experience() {
                       </div>
                       <p className="text-[#4F6EF7] font-semibold text-sm">{job.company}</p>
                     </div>
-                    <span className="text-xs font-medium text-[#94A3B8] bg-[#F1F5F9] border border-[#E2E8F0] px-3 py-1.5 rounded-full whitespace-nowrap">
-                      {job.period}
-                    </span>
+                    <div className="flex flex-col items-end gap-1">
+                      <span className="text-xs font-medium text-[#94A3B8] bg-[#F1F5F9] border border-[#E2E8F0] px-3 py-1.5 rounded-full whitespace-nowrap">
+                        {job.period}
+                      </span>
+                      {"subtitle" in job && job.subtitle && (
+                        <span className="text-xs text-[#94A3B8] italic">{job.subtitle}</span>
+                      )}
+                    </div>
                   </div>
 
                   <p className="text-sm text-[#64748B] mb-5 leading-relaxed">{job.description}</p>

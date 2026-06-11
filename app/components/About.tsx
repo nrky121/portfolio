@@ -11,6 +11,9 @@ const skills = [
   "User Research",
   "Enterprise SaaS",
   "Cross-Functional Delivery",
+  "API Literacy",
+  "Microsoft 365 Ecosystem",
+  "Integration Workflows",
 ];
 
 export default function About() {
@@ -31,16 +34,16 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#475569] leading-relaxed">
               <p>
-                I&apos;m a Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning operational complexity into clear, shippable product decisions.
+                I&apos;m a Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning complex system and data workflows into clear, shippable product decisions.
               </p>
               <p>
-                At PHSA I led delivery for CareConnect, BC's provincial clinical information system used by clinicians across all health authorities to access patient records from a single secure platform.
+                At PHSA I led delivery for CareConnect, BC&apos;s provincial clinical information system. The platform integrates health records across all BC health authorities, requiring precise stakeholder alignment, data integrity standards, and reliable cross-system delivery at scale.
               </p>
               <p>
-                At CheckingIn I drive roadmap priorities using customer interviews and usage data, and build prototypes myself to validate solutions before handing off to engineering.
+                At CheckingIn I own the full product lifecycle across a multi-module web and mobile platform. I drive roadmap priorities using customer interviews and usage data, and build prototypes to validate solutions before engineering handoff.
               </p>
               <p>
-                I&apos;m comfortable in technical conversations, fluent in agile delivery, and obsessed with data quality as a foundation for everything else.
+                I&apos;m comfortable in technical conversations, fluent in agile delivery, and focused on data quality and integration reliability as the foundation for everything else.
               </p>
             </div>
 

@@ -25,7 +25,7 @@ export default function Contact() {
 
             <div className="space-y-4">
               <a
-                href="mailto:ryan@checkingin.co"
+                href="mailto:ryankyngai@gmail.com"
                 className="flex items-center gap-4 text-sm text-slate-300 hover:text-white transition-colors group"
               >
                 <span className="w-11 h-11 flex items-center justify-center bg-white/10 group-hover:bg-[#4F6EF7] rounded-xl transition-colors border border-white/10 group-hover:border-[#4F6EF7]">
@@ -36,7 +36,7 @@ export default function Contact() {
                 </span>
                 <div>
                   <p className="font-semibold text-white">Email</p>
-                  <p className="text-xs text-slate-500">ryan@checkingin.co</p>
+                  <p className="text-xs text-slate-500">ryankyngai@gmail.com</p>
                 </div>
               </a>
 
