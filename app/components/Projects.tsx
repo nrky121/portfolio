@@ -191,7 +191,7 @@ export default function Projects() {
                   {project.id === "crm" && (
                     <div className="-mx-7 mb-10">
                       <img
-                        src="/crm2.gif"
+                        src="/crm1.gif"
                         alt="Simple CRM walkthrough"
                         className="w-full rounded-xl"
                       />
