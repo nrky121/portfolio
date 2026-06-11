@@ -99,7 +99,7 @@ export default function Projects() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <section id="projects" className="pt-10 pb-16 px-6 bg-white">
+    <section id="projects" className="pt-8 pb-16 px-6 bg-white">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
