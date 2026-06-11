@@ -71,3 +71,14 @@ html {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-fade.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}

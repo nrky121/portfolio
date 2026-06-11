@@ -1,0 +1,34 @@
+"use client";
+import { useEffect, useRef } from "react";
+
+interface Props {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+}
+
+export default function AnimateIn({ children, className = "", delay = 0 }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add("in-view"), delay);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
+
+  return (
+    <div ref={ref} className={`scroll-fade ${className}`}>
+      {children}
+    </div>
+  );
+}

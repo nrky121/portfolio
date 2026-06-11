@@ -1,3 +1,5 @@
+import AnimateIn from "./AnimateIn";
+
 const experience = [
   {
     company: "CheckingIn",
@@ -63,7 +65,8 @@ export default function Experience() {
 
           <div className="space-y-8">
             {experience.map((job, i) => (
-              <div key={i} className="md:pl-10 relative">
+              <AnimateIn key={i} delay={i * 120}>
+              <div className="md:pl-10 relative">
                 {/* Timeline dot */}
                 <div className={`absolute left-0 top-3 w-[23px] h-[23px] rounded-full border-2 hidden md:flex items-center justify-center ${
                   job.current
@@ -71,7 +74,10 @@ export default function Experience() {
                     : "border-[#CBD5E1] bg-white"
                 }`}>
                   {job.current && (
-                    <div className="w-2 h-2 bg-white rounded-full" />
+                    <>
+                      <div className="w-2 h-2 bg-white rounded-full" />
+                      <span className="absolute inline-flex w-full h-full rounded-full bg-[#4F6EF7] opacity-40 animate-ping" />
+                    </>
                   )}
                 </div>
 
@@ -114,10 +120,12 @@ export default function Experience() {
                   </ul>
                 </div>
               </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
 
+        <AnimateIn delay={experience.length * 120}>
         <div className="mt-12 bg-white border border-[#E2E8F0] rounded-2xl p-7">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-[#EEF2FF] border border-[#C7D2FE] rounded-lg flex items-center justify-center">
@@ -139,6 +147,7 @@ export default function Experience() {
             </span>
           </div>
         </div>
+        </AnimateIn>
       </div>
     </section>
   );

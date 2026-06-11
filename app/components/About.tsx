@@ -1,3 +1,5 @@
+import AnimateIn from "./AnimateIn";
+
 const skills = [
   "Product Discovery",
   "Backlog Management",
@@ -21,6 +23,7 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-14 items-start">
+          <AnimateIn delay={0}>
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-6 leading-tight">
               Product Owner with a bias for clarity and delivery.
@@ -53,7 +56,9 @@ export default function About() {
               </span>
             </div>
           </div>
+          </AnimateIn>
 
+          <AnimateIn delay={150}>
           <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
             <h3 className="text-xs font-semibold text-[#0F172A] mb-6 uppercase tracking-widest">
               Skills &amp; Expertise
@@ -69,6 +74,7 @@ export default function About() {
               ))}
             </div>
           </div>
+          </AnimateIn>
         </div>
       </div>
     </section>

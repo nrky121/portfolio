@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import AnimateIn from "./AnimateIn";
 
 const projects = [
   {
@@ -115,8 +116,8 @@ export default function Projects() {
 
         <div className="space-y-4">
           {projects.map((project, index) => (
+            <AnimateIn key={project.id} delay={index * 100}>
             <div
-              key={project.id}
               className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                 expanded === project.id
                   ? "border-[#4F6EF7] shadow-lg shadow-[#4F6EF7]/10"
@@ -226,6 +227,7 @@ export default function Projects() {
                 </div>
               )}
             </div>
+            </AnimateIn>
           ))}
         </div>
       </div>
