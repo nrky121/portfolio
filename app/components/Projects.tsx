@@ -99,7 +99,7 @@ export default function Projects() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <section id="projects" className="py-28 px-6 bg-white">
+    <section id="projects" className="py-16 px-6 bg-white">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
@@ -110,11 +110,11 @@ export default function Projects() {
         <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-3">
           Selected Work
         </h2>
-        <p className="text-[#64748B] mb-12 text-lg">
+        <p className="text-[#64748B] mb-8 text-lg">
           Case studies from enterprise platforms and side projects.
         </p>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {projects.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 100}>
             <div

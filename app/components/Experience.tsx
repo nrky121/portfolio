@@ -47,7 +47,7 @@ const experience = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-28 px-6 bg-[#F8FAFC]">
+    <section id="experience" className="py-16 px-6 bg-[#F8FAFC]">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
@@ -55,7 +55,7 @@ export default function Experience() {
             Experience
           </span>
         </div>
-        <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-12">
+        <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-8">
           Where I&apos;ve worked.
         </h2>
 
@@ -63,7 +63,7 @@ export default function Experience() {
           {/* Timeline line */}
           <div className="absolute left-0 top-3 bottom-3 w-px bg-[#E2E8F0] hidden md:block ml-[11px]" />
 
-          <div className="space-y-8">
+          <div className="space-y-5">
             {experience.map((job, i) => (
               <AnimateIn key={i} delay={i * 120}>
               <div className="md:pl-10 relative">
@@ -81,7 +81,7 @@ export default function Experience() {
                   )}
                 </div>
 
-                <div className="bg-white border border-[#E2E8F0] rounded-2xl p-7 hover:border-[#C7D2FE] hover:shadow-md transition-all duration-200">
+                <div className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:border-[#C7D2FE] hover:shadow-md transition-all duration-200">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
                       <div className="flex items-center gap-3 mb-1">
@@ -104,7 +104,7 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <p className="text-sm text-[#64748B] mb-5 leading-relaxed">{job.description}</p>
+                  <p className="text-sm text-[#64748B] mb-3 leading-relaxed">{job.description}</p>
 
                   <ul className="space-y-2.5">
                     {job.bullets.map((bullet, j) => (
@@ -126,7 +126,7 @@ export default function Experience() {
         </div>
 
         <AnimateIn delay={experience.length * 120}>
-        <div className="mt-12 bg-white border border-[#E2E8F0] rounded-2xl p-7">
+        <div className="mt-8 bg-white border border-[#E2E8F0] rounded-2xl p-5">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-[#EEF2FF] border border-[#C7D2FE] rounded-lg flex items-center justify-center">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
