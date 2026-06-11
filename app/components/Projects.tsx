@@ -10,27 +10,27 @@ const projects = [
     tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     summary:
-      "Sales and ops teams lose context when contact history, follow-ups, and relationship data aren't captured reliably. It's the same data trust problem Riva's customers face at enterprise scale.",
+      "Built a working CRM from scratch for a family member's small business, then realized it gave me ground-level understanding of the exact problem Riva solves at enterprise scale.",
     sections: [
       {
         heading: "The Problem",
-        body: "When relationship data lives across spreadsheets, email threads, and disconnected tools, it goes stale fast. Follow-ups are missed, deals fall through cracks, and every new team member starts from zero. I wanted to understand this problem space from the inside: not just as a PM describing it, but as someone who had to model it, build it, and ship it.",
+        body: "My cousin runs a small business and could not justify paying for a full CRM tool. Contacts lived in a spreadsheet, follow-ups were tracked in a notes app, and tasks were forgotten entirely. I decided to build something lightweight they could actually use. Dashboard, contacts, companies, and a task manager with priorities and due dates. No bloat, just the core of what a small team needs to manage relationships.",
       },
       {
         heading: "What I Built",
-        body: "A full-stack CRM with contacts linked to companies, activity feeds, task management, and user authentication with row-level permissions. Built with Next.js, Prisma ORM, and Supabase. Every feature was driven by a real workflow question: what does a rep actually need to track a relationship over time?",
+        body: "A full-stack CRM with a pipeline dashboard, contacts linked to companies, tag-based segmentation, task management with priority levels, and user authentication with row-level permissions. Built with Next.js, Prisma ORM, and Supabase. Every feature was driven by a real workflow question: what does someone actually need to track a relationship and never miss a follow-up?",
       },
       {
         heading: "Key Decisions",
-        body: "I enforced data integrity at the schema layer with no orphaned records and no nullable fields where data should always exist. I designed permission boundaries early so each user only sees their own data, which mirrors the access control complexity Riva manages across enterprise tenants. Keeping the model strict meant the UI could stay simple.",
+        body: "I enforced data integrity at the schema layer with no orphaned records and no nullable fields where data should always exist. I designed permission boundaries early so each user only sees their own data. Keeping the data model strict meant the UI could stay simple and the product actually usable for a non-technical user.",
       },
       {
         heading: "What I Learned",
-        body: "When the data model is clean, every downstream workflow is easier to build and easier to use. When it's not, every screen becomes a workaround. That's exactly the tradeoff Riva manages: clean, trusted activity data as the foundation for everything else. Building from scratch gave me ground-level understanding of where data quality breaks down and why syncing across systems is hard.",
+        body: "When the data model is clean, every downstream workflow is easier to build and easier to use. When it is not, every screen becomes a workaround. Building this from scratch gave me ground-level understanding of where relationship data breaks down and why syncing it reliably across systems is genuinely hard.",
       },
       {
         heading: "Connection to Riva",
-        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built the thing Riva's customers use, which means I understand the problem space at a level beyond surface familiarity. I know what breaks when data is inconsistent, and I know what it looks like when it works.",
+        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built a CRM to understand what that data looks like at the model level, how it breaks, and why clean data matters so much to the people using it. That gives me product intuition for Riva's problem space that goes beyond surface familiarity.",
       },
     ],
   },
