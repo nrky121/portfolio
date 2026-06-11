@@ -1,0 +1,36 @@
+name: Update Production Alias
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  alias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Vercel CLI
+        run: npm i -g vercel@latest
+
+      - name: Wait for deployment and update alias
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          # Give Vercel time to register the new build before polling
+          echo "Waiting for Vercel to start deployment..."
+          sleep 30
+
+          for i in $(seq 1 20); do
+            LINE=$(vercel ls --token=$VERCEL_TOKEN --scope=ryanngai 2>/dev/null | grep "ryanngai/ryan-ngai" | head -1)
+            if echo "$LINE" | grep -q "● Ready"; then
+              URL=$(echo "$LINE" | grep -oE 'https://[^ ]+')
+              echo "Deployment ready: $URL"
+              vercel alias set "$URL" ryan-ngai.vercel.app --token=$VERCEL_TOKEN --scope=ryanngai
+              echo "✓ ryan-ngai.vercel.app updated"
+              exit 0
+            fi
+            echo "Attempt $i: not ready yet, retrying in 15s..."
+            sleep 15
+          done
+
+          echo "Timed out waiting for deployment"
+          exit 1
