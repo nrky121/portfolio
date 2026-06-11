@@ -13,6 +13,7 @@ const experience = [
       "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",
       "Improved onboarding and first-run workflows by removing low-value steps, improving trial-to-paid conversion.",
       "Managed backlog prioritization, sprint planning, stakeholder demos, and release execution across distributed teams.",
+      "Wrote and maintained user stories, acceptance criteria, and definition of done across a multi-module platform serving clinical and community-facing workflows.",
     ],
   },
   {
