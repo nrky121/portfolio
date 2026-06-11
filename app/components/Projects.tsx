@@ -23,11 +23,11 @@ const projects = [
       },
       {
         heading: "Key Decisions",
-        body: "I enforced data integrity at the schema layer with no orphaned records and no nullable fields where data should always exist. I designed permission boundaries early so each user only sees their own data. Keeping the data model strict meant the UI could stay simple and the product actually usable for a non-technical user.",
+        body: "I built user authentication with row-level permissions so each user only sees their own data. I kept the data structure simple and intentional: contacts linked to companies, activities tied to contacts, tasks assigned to owners. Every field had a clear purpose. That discipline kept the UI clean and the product usable for someone with no technical background.",
       },
       {
         heading: "What I Learned",
-        body: "When the data model is clean, every downstream workflow is easier to build and easier to use. When it is not, every screen becomes a workaround. Building this from scratch gave me ground-level understanding of where relationship data breaks down and why syncing it reliably across systems is genuinely hard.",
+        body: "Building something real rather than just describing it changes how you think about the problem. I now understand what it actually takes to keep relationship data clean and consistent, and why that gets exponentially harder when you try to sync it across multiple systems. That is exactly the problem Riva solves.",
       },
       {
         heading: "Connection to Riva",
@@ -88,7 +88,7 @@ const projects = [
         body: "Led discovery and delivery for operational workflows across intake, referral, and onboarding. Used customer interviews and usage data to identify where friction was highest, then built prototypes directly to validate solutions before engineering got involved. Managed backlog, sprint planning, stakeholder demos, and release execution across a distributed team.",
       },
       {
-        heading: "Hands-On Prototyping",
+        heading: "Outcome",
         body: "Building prototypes myself rather than describing requirements in documents changed the quality of feedback I got from users and stakeholders. When people can click through something real, they give specific, actionable input. It also gave engineering a much clearer picture of what done looked like before a line of production code was written, reducing rework by roughly 25%.",
       },
     ],
@@ -196,6 +196,18 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+                {project.id === "crm" && (
+                  <div className="mt-3" onClick={(e) => e.stopPropagation()}>
+                    <a
+                      href="https://simple-crm-pearl.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
+                    >
+                      View Live ↗
+                    </a>
+                  </div>
+                )}
               </button>
 
               {expanded === project.id && (
