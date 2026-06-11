@@ -13,7 +13,7 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="pt-16 pb-0 px-6 bg-[#F8FAFC]">
+    <section id="about" className="pt-16 pb-10 px-6 bg-[#F8FAFC]">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
@@ -22,9 +22,8 @@ export default function About() {
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-14" style={{ alignItems: "start" }}>
-          <AnimateIn delay={0}>
-          <div>
+        <AnimateIn delay={0}>
+          <div className="max-w-2xl">
             <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-6 leading-tight">
               Product Owner with a bias for clarity and delivery.
             </h2>
@@ -55,16 +54,8 @@ export default function About() {
                 BA (Econ), UBC
               </span>
             </div>
-          </div>
-          </AnimateIn>
 
-          <div style={{ alignSelf: "flex-start" }}>
-          <AnimateIn delay={150}>
-          <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
-            <h3 className="text-xs font-semibold text-[#0F172A] mb-6 uppercase tracking-widest">
-              Skills &amp; Expertise
-            </h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <span
                   key={skill}
@@ -75,9 +66,7 @@ export default function About() {
               ))}
             </div>
           </div>
-          </AnimateIn>
-          </div>
-        </div>
+        </AnimateIn>
       </div>
     </section>
   );
