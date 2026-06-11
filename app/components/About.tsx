@@ -12,7 +12,7 @@ const skills = [
 export default function About() {
   return (
     <section id="about" className="py-28 px-6 bg-[#F8FAFC]">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
           <span className="text-xs font-semibold tracking-widest uppercase text-[#4F6EF7]">

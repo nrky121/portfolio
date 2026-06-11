@@ -6,7 +6,7 @@ export default function Contact() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#3B5BDB] rounded-full blur-[120px] opacity-20" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto">
+      <div className="relative z-10 max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
           <span className="text-xs font-semibold tracking-widest uppercase text-[#4F6EF7]">

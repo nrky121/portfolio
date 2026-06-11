@@ -26,7 +26,7 @@ export default function Nav() {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
         <span className={`font-bold tracking-tight transition-colors duration-500 ${scrolled ? "text-[#0F172A]" : "text-white"}`}>
           Ryan Ngai
         </span>

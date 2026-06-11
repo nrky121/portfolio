@@ -99,7 +99,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-28 px-6 bg-white">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-px bg-[#4F6EF7]" />
           <span className="text-xs font-semibold tracking-widest uppercase text-[#4F6EF7]">
@@ -189,15 +189,15 @@ export default function Projects() {
                     {project.summary}
                   </p>
                   {"images" in project && project.images && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                    <div className="-mx-7 grid grid-cols-1 md:grid-cols-2 gap-px mb-10">
                       {project.images.map((img) => (
                         <div key={img.src}>
                           <img
                             src={img.src}
                             alt={img.caption}
-                            className="w-full rounded-xl border border-[#E2E8F0] object-cover"
+                            className="w-full min-h-[300px] object-contain bg-[#F1F5F9] border border-[#E2E8F0]"
                           />
-                          <p className="mt-2 text-xs text-[#94A3B8] text-center">{img.caption}</p>
+                          <p className="mt-2 mb-4 text-xs text-[#94A3B8] text-center px-4">{img.caption}</p>
                         </div>
                       ))}
                     </div>

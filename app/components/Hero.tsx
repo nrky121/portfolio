@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
         <div className="fade-up fade-up-delay-1">
           <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#818CF8] mb-8 border border-[#818CF8]/30 px-4 py-2 rounded-full bg-[#818CF8]/10">
             <span className="w-1.5 h-1.5 bg-[#818CF8] rounded-full"></span>
