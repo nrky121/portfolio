@@ -69,6 +69,10 @@ const projects = [
     tech: ["Mobile App", "Web Platform", "User Research", "Prototyping", "Conversion Optimization"],
     summary:
       "CheckingIn is a mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool supporting detox, treatment, and aftercare pathways. I drove roadmap priorities using customer interviews and usage data, building prototypes directly to validate solutions before engineering handoff.",
+    images: [
+      { src: "/checkingin2.png", caption: "Treatment Intake & Facility Matching Workflow" },
+      { src: "/checkingin1.png", caption: "Culture is Healing - Client-Facing Mobile App" },
+    ],
     sections: [
       {
         heading: "The Product",
@@ -184,6 +188,20 @@ export default function Projects() {
                   <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
                     {project.summary}
                   </p>
+                  {"images" in project && project.images && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                      {project.images.map((img) => (
+                        <div key={img.src}>
+                          <img
+                            src={img.src}
+                            alt={img.caption}
+                            className="w-full rounded-xl border border-[#E2E8F0] object-cover"
+                          />
+                          <p className="mt-2 text-xs text-[#94A3B8] text-center">{img.caption}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="grid md:grid-cols-2 gap-8">
                     {project.sections.map((section) => (
                       <div key={section.heading} className="bg-white border border-[#E2E8F0] rounded-xl p-5">
