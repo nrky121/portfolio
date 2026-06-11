@@ -1,19 +1,12 @@
 const skills = [
   "Product Discovery",
   "Backlog Management",
-  "Sprint Planning",
-  "Stakeholder Alignment",
-  "Data-Driven Prioritization",
-  "Agile / Scrum",
-  "Acceptance Criteria",
   "CRM & Data Models",
-  "Hands-On Prototyping",
-  "User Research",
-  "Enterprise SaaS",
-  "Cross-Functional Delivery",
-  "API Literacy",
-  "Microsoft 365 Ecosystem",
   "Integration Workflows",
+  "API Literacy",
+  "Acceptance Criteria",
+  "Hands-On Prototyping",
+  "Enterprise SaaS",
 ];
 
 export default function About() {

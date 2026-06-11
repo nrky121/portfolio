@@ -45,19 +45,19 @@ const projects = [
     sections: [
       {
         heading: "The Problem",
-        body: "BC's health system spans six health authorities, each running different clinical systems. Clinicians treating a patient often had no visibility into care delivered elsewhere in the province, leading to repeated tests, phone calls between facilities, and decisions made without the full picture. CareConnect was built to solve this by aggregating clinical data into one secure provincial viewer.",
+        body: "Clinicians across BC health authorities had no single view of a patient's health records. Each health authority held its own data in disconnected systems, forcing clinicians to chase records across platforms during time-sensitive care decisions.",
       },
       {
         heading: "What I Did",
-        body: "Served as Team Lead and Product Owner, responsible for product strategy and delivery across the platform. Translated complex clinical and operational workflow needs into prioritized product improvements. Managed integrations with health authority systems, coordinated release sequencing, and led cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
+        body: "Led product strategy and delivery for CareConnect, BC's provincial clinical information system. Worked across clinical, operational, and technical stakeholder groups to translate complex workflows into prioritized product improvements and coordinated cross-system releases.",
       },
       {
-        heading: "Outcomes",
-        body: "Reduced manual coordination and duplicate data entry by 30%. Improved delivery reliability across interconnected provincial systems. Supported rollout planning and user adoption across a large, geographically distributed stakeholder base with high compliance and patient safety stakes.",
+        heading: "Key Decisions",
+        body: "Prioritized data consistency and integration reliability over new feature velocity. Coordinated release sequencing carefully across interconnected health authority systems to avoid cascading failures. Reduced manual coordination overhead by 30% through clearer requirements and stakeholder alignment processes.",
       },
       {
-        heading: "Why It Matters",
-        body: "Running a provincial clinical information system means managing data integrity, access control, and multi-system integrations under real stakes. The same principles that make CareConnect reliable are what make enterprise data platforms like Riva trustworthy: clean data, clear permissions, and integration sequencing done carefully.",
+        heading: "What I Learned",
+        body: "Enterprise integration products live or die on trust. When data is inconsistent or a sync breaks, clinical workflows break with it. That gave me a ground-level understanding of why reliable data flow across systems is non-negotiable, which is directly relevant to how Riva operates at enterprise scale.",
       },
     ],
   },
@@ -103,10 +103,10 @@ export default function Projects() {
           </span>
         </div>
         <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-3">
-          What I&apos;ve built and shipped.
+          Selected Work
         </h2>
         <p className="text-[#64748B] mb-12 text-lg">
-          Click any project to read the full case study.
+          Case studies from enterprise platforms and side projects.
         </p>
 
         <div className="space-y-4">
