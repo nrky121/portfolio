@@ -35,10 +35,10 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className={`text-sm font-medium transition-colors duration-500 ${
+                className={`text-sm font-medium transition-colors duration-200 ${
                   scrolled
                     ? "text-[#64748B] hover:text-[#0F172A]"
-                    : "text-white/70 hover:text-white"
+                    : "text-[#94a3b8] hover:text-white"
                 }`}
               >
                 {link.label}
