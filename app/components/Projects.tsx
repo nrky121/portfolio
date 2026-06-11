@@ -125,9 +125,19 @@ export default function Projects() {
               }`}
             >
               <button
-                onClick={() =>
-                  setExpanded(expanded === project.id ? null : project.id)
-                }
+                onClick={(e) => {
+                  const isExpanding = expanded !== project.id;
+                  const scrollY = window.scrollY;
+                  e.currentTarget.blur();
+                  setExpanded(expanded === project.id ? null : project.id);
+                  if (isExpanding) {
+                    requestAnimationFrame(() => {
+                      document.documentElement.style.scrollBehavior = "auto";
+                      window.scrollTo(0, scrollY);
+                      document.documentElement.style.scrollBehavior = "";
+                    });
+                  }
+                }}
                 className="w-full text-left p-7 transition-colors"
               >
                 <div className="flex items-start justify-between gap-4">
