@@ -7,7 +7,7 @@ const experience = [
     period: "Apr 2025 – Present",
     current: true,
     description:
-      "Mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool to support healing, treatment pathways, and cultural connection.",
+      "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
       "Led discovery and delivery for operational workflows across intake, referral, and onboarding using customer interviews and usage data to guide roadmap priorities.",
       "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",
@@ -22,7 +22,7 @@ const experience = [
     period: "Apr 2022 – Mar 2025",
     current: false,
     description:
-      "PHSA delivers enterprise digital health platforms across British Columbia, including CareConnect, the province's clinical information system.",
+      "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
     bullets: [
       "Led product strategy and delivery for CareConnect, BC's provincial clinical information system giving clinicians across all health authorities a single, secure view of patient health records.",
       "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30%.",
