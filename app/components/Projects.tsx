@@ -10,8 +10,6 @@ const projects = [
     title: "Simple CRM",
     tagline: "Built a lightweight CRM for a family member who was managing contacts and follow-ups across spreadsheets and notes apps. Saw the problem firsthand and shipped a simple tool with contacts, tasks, and a dashboard so nothing falls through the cracks.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
-    summary:
-      "Built a lightweight CRM for a family member who was managing contacts and follow-ups across spreadsheets and notes apps. Saw the problem firsthand and shipped a simple tool with contacts, tasks, and a dashboard so nothing falls through the cracks.",
     sections: [
       {
         heading: "The Problem",
@@ -208,9 +206,11 @@ export default function Projects() {
 
               {expanded === project.id && (
                 <div className="border-t border-[#EEF2FF] px-7 py-8 bg-[#F8FAFC]">
-                  <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
-                    {project.summary}
-                  </p>
+                  {"summary" in project && project.summary && (
+                    <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
+                      {project.summary}
+                    </p>
+                  )}
                   {project.id === "careconnect" && (
                     <div className="-mx-7 mb-10">
                       <img
