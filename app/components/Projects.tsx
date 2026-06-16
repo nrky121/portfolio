@@ -8,30 +8,26 @@ const projects = [
     id: "crm",
     label: "Side Project",
     title: "Simple CRM",
-    tagline: "Built a lightweight CRM from scratch to develop deep intuition for workflow design, data modeling, and the operational complexity that B2B SaaS teams face at scale. A hands-on side project to go beyond theory and ship something end-to-end, from schema design to live deployment.",
+    tagline: "Built a lightweight CRM for a family member who was managing contacts and follow-ups across spreadsheets and notes apps. Saw the problem firsthand and shipped a simple tool with contacts, tasks, and a dashboard so nothing falls through the cracks.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     summary:
-      "Built a lightweight CRM from scratch to develop deep intuition for workflow design, data modeling, and the operational complexity that B2B SaaS teams face at scale. A hands-on side project to go beyond theory and ship something end-to-end, from schema design to live deployment.",
+      "Built a lightweight CRM for a family member who was managing contacts and follow-ups across spreadsheets and notes apps. Saw the problem firsthand and shipped a simple tool with contacts, tasks, and a dashboard so nothing falls through the cracks.",
     sections: [
       {
         heading: "The Problem",
-        body: "My cousin runs a small business and could not justify paying for a full CRM tool. Contacts lived in a spreadsheet, follow-ups were tracked in a notes app, and tasks were forgotten entirely. I decided to build something lightweight they could actually use. Dashboard, contacts, companies, and a task manager with priorities and due dates. No bloat, just the core of what a small team needs to manage relationships.",
+        body: "My cousin runs a small business and was tracking contacts in a spreadsheet, follow-ups in a notes app, and tasks in her head. Nothing was connected and things were constantly falling through the cracks. I saw it firsthand — not as an abstract workflow challenge, but as a real person losing track of real relationships. She could not justify paying for a full CRM, and the tools that existed were far more than she needed. So I built something lightweight she could actually use.",
       },
       {
         heading: "What I Built",
-        body: "A full-stack CRM with a pipeline dashboard, contacts linked to companies, tag-based segmentation, task management with priority levels, and user authentication with row-level permissions. Built with Next.js, Prisma ORM, and Supabase. Every feature was driven by a real workflow question: what does someone actually need to track a relationship and never miss a follow-up?",
+        body: "A full-stack CRM with a dashboard, contacts linked to companies, tag-based segmentation, and a task manager with priority levels and due dates. Built with Next.js, Prisma ORM, and Supabase. Every feature decision came from one question: what does she actually need to track a relationship and never miss a follow-up? No bloat, just the core of what one person needs to stay on top of their work.",
       },
       {
         heading: "Key Decisions",
-        body: "I built user authentication with row-level permissions so each user only sees their own data. I kept the data structure simple and intentional: contacts linked to companies, activities tied to contacts, tasks assigned to owners. Every field had a clear purpose. That discipline kept the UI clean and the product usable for someone with no technical background.",
+        body: "I built user authentication with row-level permissions so her data stays personal and secure. I kept the data structure simple and intentional: contacts linked to companies, tasks assigned to owners, every field with a clear purpose. That discipline kept the UI clean and the product actually usable for someone with no technical background. I cut anything that did not directly solve her problem.",
       },
       {
         heading: "What I Learned",
-        body: "Building something real rather than just describing it changes how you think about the problem. I now understand what it actually takes to keep relationship data clean and consistent, and why that gets exponentially harder when you try to sync it across multiple systems. That is exactly the problem Riva solves.",
-      },
-      {
-        heading: "Connection to Riva",
-        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built a CRM to understand what that data looks like at the model level, how it breaks, and why clean data matters so much to the people using it. That gives me product intuition for Riva's problem space that goes beyond surface familiarity.",
+        body: "Building for a real user, even one person, changes how you make decisions. You stop adding features that sound good and start cutting anything that does not solve the actual problem. It also gave me hands-on intuition for how workflow data breaks down when it touches multiple objects like contacts, companies, and tasks. Keeping that data clean and consistent is the real challenge in any product where accurate data drives real outcomes.",
       },
     ],
   },
