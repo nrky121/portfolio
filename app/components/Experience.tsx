@@ -3,31 +3,31 @@ import AnimateIn from "./AnimateIn";
 const experience = [
   {
     company: "CheckingIn",
-    role: "Product Owner / Product Manager",
+    role: "Product Manager / Product Owner",
     period: "Apr 2025 – Present",
     current: true,
     description:
       "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
-      "Led discovery and delivery for operational workflows across intake, referral, and onboarding using customer interviews and usage data to guide roadmap priorities.",
-      "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",
-      "Improved onboarding and first-run workflows by removing low-value steps, improving trial-to-paid conversion.",
-      "Managed backlog prioritization, sprint planning, stakeholder demos, and release execution across distributed teams.",
-      "Wrote and maintained user stories, acceptance criteria, and definition of done across a multi-module platform serving clinical and community-facing workflows.",
+      "Led end-to-end product development for operational workflows, from discovery through launch, using in-depth customer interviews and usage data to define problems and sequence a dynamic roadmap.",
+      "Conducted customer development and user research to uncover problems early, building prototypes to validate solutions before engineering handoff and reducing dev rework by ~25%.",
+      "Identified opportunities to apply AI and automation to reduce manual effort across intake and referral workflows, improving operational efficiency for clients.",
+      "Enabled go-to-market and client experience teams by improving onboarding and first-run workflows, removing friction and improving trial-to-paid conversion.",
+      "Managed backlog prioritization, sprint planning, and release execution across distributed teams, delivering iterative improvements in short cycles within resource constraints.",
     ],
   },
   {
     company: "Provincial Health Services Authority",
-    role: "Team Lead & Product Owner",
+    role: "Product Manager / Product Owner",
     period: "Apr 2022 – Mar 2025",
     current: false,
     description:
       "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
     bullets: [
-      "Led product strategy and delivery for CareConnect, BC's provincial clinical information system giving clinicians across all health authorities a single, secure view of patient health records.",
-      "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30%.",
-      "Collaborated with engineering teams on cross-system health authority integrations, ensuring data consistency and reliable sync across interconnected provincial platforms.",
-      "Coordinated rollout planning, user adoption, and cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
+      "Led end-to-end product strategy and delivery for CareConnect, BC's provincial clinical information system, navigating compliance-heavy requirements and data integrity standards across all BC health authorities.",
+      "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30% while maintaining reliability across interconnected provincial systems.",
+      "Collaborated with engineering teams on cross-system integrations, ensuring data consistency and accurate sync across health authority platforms, which is experience directly relevant to compliance-driven SaaS products.",
+      "Influenced senior stakeholders and led cross-functional alignment province-wide, driving rollout planning and user adoption without formal authority over clinical, operational, and technical teams.",
     ],
   },
   {

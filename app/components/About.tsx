@@ -29,7 +29,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#475569] leading-relaxed">
               <p>
-                I&apos;m a Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning complex system and data workflows into clear, shippable product decisions.
+                I&apos;m a Product Manager / Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning compliance-heavy, data-sensitive workflows into clear, shippable product decisions.
               </p>
               <p>
                 At PHSA I led delivery for CareConnect, BC&apos;s provincial clinical information system. The platform integrates health records across all BC health authorities, requiring precise stakeholder alignment, data integrity standards, and reliable cross-system delivery at scale.
@@ -39,6 +39,9 @@ export default function About() {
               </p>
               <p>
                 I&apos;m comfortable in technical conversations, fluent in agile delivery, and focused on data quality and integration reliability as the foundation for everything else.
+              </p>
+              <p>
+                I&apos;m drawn to domains where data accuracy is non-negotiable, and I look for every opportunity to apply AI and automation to reduce manual work for the people using the product.
               </p>
             </div>
 

@@ -8,10 +8,10 @@ const projects = [
     id: "crm",
     label: "Side Project",
     title: "Simple CRM",
-    tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
+    tagline: "Built a lightweight CRM from scratch to develop deep intuition for workflow design, data modeling, and the operational complexity that B2B SaaS teams face at scale. A hands-on side project to go beyond theory and ship something end-to-end, from schema design to live deployment.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     summary:
-      "Built a working CRM from scratch for a family member's small business, then realized it gave me ground-level understanding of the exact problem Riva solves at enterprise scale.",
+      "Built a lightweight CRM from scratch to develop deep intuition for workflow design, data modeling, and the operational complexity that B2B SaaS teams face at scale. A hands-on side project to go beyond theory and ship something end-to-end, from schema design to live deployment.",
     sections: [
       {
         heading: "The Problem",
@@ -42,7 +42,7 @@ const projects = [
     tagline: "BC's provincial clinical information system giving clinicians a single view of patient health records across all health authorities.",
     tech: ["Provincial Health Platform", "Enterprise Integrations", "Agile Delivery", "Stakeholder Management"],
     summary:
-      "Led product strategy and delivery for CareConnect, BC's provincial clinical information system. Clinicians across all health authorities use it as their single, secure point of access to patient health data regardless of where in the province that care was delivered.",
+      "Led product delivery for BC's provincial clinical information system, serving clinicians across every health authority in the province. Navigated strict compliance requirements, cross-system data integrity challenges, and multi-stakeholder alignment at a scale where every release had to be reliable. Reduced manual coordination by 30% and improved data consistency across interconnected platforms.",
     sections: [
       {
         heading: "The Problem",

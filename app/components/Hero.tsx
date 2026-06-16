@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="fade-up fade-up-delay-1">
           <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#818CF8] mb-8 border border-[#818CF8]/30 px-4 py-2 rounded-full bg-[#818CF8]/10">
             <span className="w-1.5 h-1.5 bg-[#818CF8] rounded-full"></span>
-            Product Owner · B2B SaaS · Enterprise Platforms
+            Product Manager / Product Owner · B2B SaaS · Enterprise Platforms
           </span>
         </div>
 
@@ -30,8 +30,7 @@ export default function Hero() {
         </h1>
 
         <p className="fade-up fade-up-delay-3 text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed mb-12">
-          I turn integration complexity into products
-          <br className="hidden md:block" /> that enterprise teams actually trust.
+          I turn complex workflows into products that help people spend less time on admin and more time on what matters.
         </p>
 
         <div className="fade-up fade-up-delay-4 flex flex-wrap items-center gap-4">
