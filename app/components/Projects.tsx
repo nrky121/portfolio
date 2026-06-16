@@ -13,7 +13,7 @@ const projects = [
     sections: [
       {
         heading: "The Problem",
-        body: "My cousin runs a small business and was tracking contacts in a spreadsheet, follow-ups in a notes app, and tasks in her head. Nothing was connected and things were constantly falling through the cracks. I saw it firsthand — not as an abstract workflow challenge, but as a real person losing track of real relationships. She could not justify paying for a full CRM, and the tools that existed were far more than she needed. So I built something lightweight she could actually use.",
+        body: "My cousin runs a small business and was tracking contacts in a spreadsheet, follow-ups in a notes app, and tasks in her head. Nothing was connected and things were constantly falling through the cracks. I saw it firsthand, not as an abstract workflow challenge, but as a real person losing track of real relationships. She could not justify paying for a full CRM, and the tools that existed were far more than she needed. So I built something lightweight she could actually use.",
       },
       {
         heading: "What I Built",
