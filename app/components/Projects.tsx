@@ -5,42 +5,42 @@ import AnimateIn from "./AnimateIn";
 
 const projects = [
   {
-    id: "crm",
+    id: "closetrack",
     label: "Side Project",
-    title: "Simple CRM",
-    tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
-    tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
+    featured: true,
+    title: "Closetrack",
+    tagline: "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks. The agent monitors Gmail via OAuth, matches incoming emails to open files, generates follow-up messages, and sends emails from the notary's own account automatically. Demonstrates end-to-end product thinking from customer discovery through requirements, build, and deployment.",
+    tech: ["Agent-as-a-Service", "AI", "Gmail OAuth", "Supabase", "React", "Vite"],
+    liveUrl: "https://notary-rosy.vercel.app",
+    githubUrl: "https://github.com/nrky121/notary",
     summary:
-      "Built a working CRM from scratch for a family member's small business, then realized it gave me ground-level understanding of the exact problem Riva solves at enterprise scale.",
+      "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks.",
     sections: [
       {
         heading: "The Problem",
-        body: "My cousin runs a small business and could not justify paying for a full CRM tool. Contacts lived in a spreadsheet, follow-ups were tracked in a notes app, and tasks were forgotten entirely. I decided to build something lightweight they could actually use. Dashboard, contacts, companies, and a task manager with priorities and due dates. No bloat, just the core of what a small team needs to manage relationships.",
+        body: "Independent notaries in BC manage 15 to 40 active closing files simultaneously. Tracking outstanding documents—signed deeds, title transfers, mortgage discharges—was manual, scattered across email threads, and easy to miss. There was no system keeping them on top of what needed to come back before a closing could complete.",
+      },
+      {
+        heading: "Customer Discovery",
+        body: "Started with discovery interviews with practicing notaries to validate the gap. Confirmed that follow-up tracking was a real pain point consuming significant time and causing stress during busy periods. Used those interviews to define the core workflow before writing a line of code.",
       },
       {
         heading: "What I Built",
-        body: "A full-stack CRM with a pipeline dashboard, contacts linked to companies, tag-based segmentation, task management with priority levels, and user authentication with row-level permissions. Built with Next.js, Prisma ORM, and Supabase. Every feature was driven by a real workflow question: what does someone actually need to track a relationship and never miss a follow-up?",
+        body: "An AI agent that monitors Gmail via OAuth, matches incoming emails to open closing files, generates contextual follow-up messages based on what's outstanding, and sends emails automatically from the notary's own account. Built with React, Vite, Supabase, and an AI model for email classification and message generation.",
       },
       {
-        heading: "Key Decisions",
-        body: "I built user authentication with row-level permissions so each user only sees their own data. I kept the data structure simple and intentional: contacts linked to companies, activities tied to contacts, tasks assigned to owners. Every field had a clear purpose. That discipline kept the UI clean and the product usable for someone with no technical background.",
-      },
-      {
-        heading: "What I Learned",
-        body: "Building something real rather than just describing it changes how you think about the problem. I now understand what it actually takes to keep relationship data clean and consistent, and why that gets exponentially harder when you try to sync it across multiple systems. That is exactly the problem Riva solves.",
-      },
-      {
-        heading: "Connection to Riva",
-        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built a CRM to understand what that data looks like at the model level, how it breaks, and why clean data matters so much to the people using it. That gives me product intuition for Riva's problem space that goes beyond surface familiarity.",
+        heading: "Outcome",
+        body: "Shipped from customer discovery to live deployment in two weeks. The project demonstrates end-to-end product thinking: starting with real user pain, validating the problem before building, making technical architecture decisions, and deploying a working product.",
       },
     ],
   },
   {
     id: "careconnect",
     label: "PHSA",
+    featured: false,
     title: "CareConnect",
-    tagline: "BC's provincial clinical information system giving clinicians a single view of patient health records across all health authorities.",
-    tech: ["Provincial Health Platform", "Enterprise Integrations", "Agile Delivery", "Stakeholder Management"],
+    tagline: "BC's provincial clinical information system giving clinicians a single view of patient health records across all health authorities. Owned roadmap, stakeholder intake, requirements documentation, and cross-system integration delivery at scale.",
+    tech: ["Roadmap Ownership", "Vendor Management", "Requirements Documentation", "Cross-system Integration"],
     summary:
       "Led product strategy and delivery for CareConnect, BC's provincial clinical information system. Clinicians across all health authorities use it as their single, secure point of access to patient health data regardless of where in the province that care was delivered.",
     sections: [
@@ -58,15 +58,16 @@ const projects = [
       },
       {
         heading: "What I Learned",
-        body: "Enterprise integration products live or die on trust. When data is inconsistent or a sync breaks, clinical workflows break with it. That gave me a ground-level understanding of why reliable data flow across systems is non-negotiable, which is directly relevant to how Riva operates at enterprise scale.",
+        body: "Enterprise integration products live or die on trust. When data is inconsistent or a sync breaks, clinical workflows break with it. That gave me a ground-level understanding of why reliable data flow across systems is non-negotiable at scale.",
       },
     ],
   },
   {
     id: "checkingin",
     label: "CheckingIn",
+    featured: false,
     title: "Intake and Onboarding Workflows",
-    tagline: "Drove discovery and delivery across the mobile app and web platform at CheckingIn.",
+    tagline: "Drove discovery, requirements documentation, and delivery across the mobile app and web platform at CheckingIn. Led stakeholder intake, roadmap prioritization, and release readiness for operational workflow improvements.",
     tech: ["Mobile App", "Web Platform", "User Research", "Prototyping", "Conversion Optimization"],
     summary:
       "CheckingIn is a mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool supporting detox, treatment, and aftercare pathways. I drove roadmap priorities using customer interviews and usage data, building prototypes directly to validate solutions before engineering handoff.",
@@ -90,6 +91,39 @@ const projects = [
       {
         heading: "Outcome",
         body: "Building prototypes myself rather than describing requirements in documents changed the quality of feedback I got from users and stakeholders. When people can click through something real, they give specific, actionable input. It also gave engineering a much clearer picture of what done looked like before a line of production code was written, reducing rework by roughly 25%.",
+      },
+    ],
+  },
+  {
+    id: "crm",
+    label: "Side Project",
+    featured: true,
+    title: "Simple CRM",
+    tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
+    tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
+    liveUrl: "https://simple-crm-pearl.vercel.app/",
+    summary:
+      "Built a working CRM from scratch for a family member's small business, then realized it gave me ground-level understanding of the exact problem Riva solves at enterprise scale.",
+    sections: [
+      {
+        heading: "The Problem",
+        body: "My cousin runs a small business and could not justify paying for a full CRM tool. Contacts lived in a spreadsheet, follow-ups were tracked in a notes app, and tasks were forgotten entirely. I decided to build something lightweight they could actually use. Dashboard, contacts, companies, and a task manager with priorities and due dates. No bloat, just the core of what a small team needs to manage relationships.",
+      },
+      {
+        heading: "What I Built",
+        body: "A full-stack CRM with a pipeline dashboard, contacts linked to companies, tag-based segmentation, task management with priority levels, and user authentication with row-level permissions. Built with Next.js, Prisma ORM, and Supabase. Every feature was driven by a real workflow question: what does someone actually need to track a relationship and never miss a follow-up?",
+      },
+      {
+        heading: "Key Decisions",
+        body: "I built user authentication with row-level permissions so each user only sees their own data. I kept the data structure simple and intentional: contacts linked to companies, activities tied to contacts, tasks assigned to owners. Every field had a clear purpose. That discipline kept the UI clean and the product usable for someone with no technical background.",
+      },
+      {
+        heading: "What I Learned",
+        body: "Building something real rather than just describing it changes how you think about the problem. I now understand what it actually takes to keep relationship data clean and consistent, and why that gets exponentially harder when you try to sync it across multiple systems. That is exactly the problem Riva solves.",
+      },
+      {
+        heading: "Connection to Riva",
+        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built a CRM to understand what that data looks like at the model level, how it breaks, and why clean data matters so much to the people using it. That gives me product intuition for Riva's problem space that goes beyond surface familiarity.",
       },
     ],
   },
@@ -148,13 +182,13 @@ export default function Projects() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                        index === 0
+                        project.featured
                           ? "text-[#4F6EF7] bg-[#EEF2FF] border border-[#C7D2FE]"
                           : "text-[#64748B] bg-[#F1F5F9] border border-[#E2E8F0]"
                       }`}>
                         {project.label}
                       </span>
-                      {index === 0 && (
+                      {project.featured && (
                         <span className="text-xs font-semibold text-[#059669] bg-[#D1FAE5] border border-[#A7F3D0] px-3 py-1 rounded-full">
                           Featured
                         </span>
@@ -196,16 +230,28 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {project.id === "crm" && (
-                  <div className="mt-3" onClick={(e) => e.stopPropagation()}>
-                    <a
-                      href="https://simple-crm-pearl.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
-                    >
-                      View Live ↗
-                    </a>
+                {("liveUrl" in project || "githubUrl" in project) && (
+                  <div className="mt-3 flex gap-2" onClick={(e) => e.stopPropagation()}>
+                    {"liveUrl" in project && project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
+                      >
+                        View Live ↗
+                      </a>
+                    )}
+                    {"githubUrl" in project && project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
+                      >
+                        GitHub ↗
+                      </a>
+                    )}
                   </div>
                 )}
               </button>
@@ -215,6 +261,14 @@ export default function Projects() {
                   <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
                     {project.summary}
                   </p>
+                  {project.id === "closetrack" && (
+                    <div className="-mx-7 mb-10">
+                      {/* Replace with Closetrack GIF once recorded */}
+                      <div className="w-full h-64 bg-[#F1F5F9] border border-[#E2E8F0] flex items-center justify-center">
+                        <p className="text-[#94A3B8] text-sm">Closetrack demo coming soon</p>
+                      </div>
+                    </div>
+                  )}
                   {project.id === "careconnect" && (
                     <div className="-mx-7 mb-10">
                       <img

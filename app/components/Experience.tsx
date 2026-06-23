@@ -3,31 +3,32 @@ import AnimateIn from "./AnimateIn";
 const experience = [
   {
     company: "CheckingIn",
-    role: "Product Owner / Product Manager",
+    role: "Product Manager",
     period: "Apr 2025 – Present",
     current: true,
     description:
       "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
-      "Led discovery and delivery for operational workflows across intake, referral, and onboarding using customer interviews and usage data to guide roadmap priorities.",
-      "Built prototypes directly to validate solutions with users before engineering handoff, reducing development rework by ~25% through earlier validation and clearer requirements.",
-      "Improved onboarding and first-run workflows by removing low-value steps, improving trial-to-paid conversion.",
-      "Managed backlog prioritization, sprint planning, stakeholder demos, and release execution across distributed teams.",
-      "Wrote and maintained user stories, acceptance criteria, and definition of done across a multi-module platform serving clinical and community-facing workflows.",
+      "Owned and maintained product roadmap across multiple modules, balancing stakeholder input, technical constraints, and business priorities to drive sequencing and release planning.",
+      "Developed PRDs, user stories, and acceptance criteria to bring product management discipline and documentation standards to an early-stage team.",
+      "Led discovery through customer interviews and usage data, translating business needs into clear requirements and solution recommendations for engineering handoff.",
+      "Managed release readiness, QA, and sprint execution across distributed teams, reducing development rework through earlier validation and tighter scope definition.",
+      "Built prototypes directly to validate solutions with stakeholders before engineering handoff, improving alignment and reducing ambiguity on complex workflows.",
     ],
   },
   {
     company: "Provincial Health Services Authority",
-    role: "Team Lead & Product Owner",
+    role: "Team Lead & Product Manager / Business Analyst",
     period: "Apr 2022 – Mar 2025",
     current: false,
     description:
       "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
     bullets: [
-      "Led product strategy and delivery for CareConnect, BC's provincial clinical information system giving clinicians across all health authorities a single, secure view of patient health records.",
-      "Translated complex clinical and operational workflows into prioritized product improvements, reducing manual coordination and duplicate data entry by 30%.",
-      "Collaborated with engineering teams on cross-system health authority integrations, ensuring data consistency and reliable sync across interconnected provincial platforms.",
-      "Coordinated rollout planning, user adoption, and cross-functional alignment across clinical, operational, and technical stakeholder groups province-wide.",
+      "Built and maintained product roadmaps for CareConnect, aligning clinical, operational, and technical stakeholders across all BC health authorities on priorities, constraints, and release timelines.",
+      "Conducted business analysis across complex clinical workflows, developing requirements documentation, process maps, and testing artifacts to support cross-system integrations and platform enhancements.",
+      "Collaborated with engineering on cross-system health authority integrations, ensuring data consistency, reliable sync, and alignment with downstream system requirements.",
+      "Led vendor coordination on platform updates, SLA management, and feature prioritization, ensuring third-party capabilities aligned with business needs and operational constraints.",
+      "Coordinated rollout planning, training material development, and cross-functional stakeholder alignment across clinical, operational, and technical groups province-wide.",
     ],
   },
   {

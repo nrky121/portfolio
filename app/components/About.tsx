@@ -9,6 +9,13 @@ const skills = [
   "Acceptance Criteria",
   "Hands-On Prototyping",
   "Enterprise SaaS",
+  "Roadmap Development",
+  "Vendor Management",
+  "Release Readiness",
+  "Business Requirements",
+  "SaaS Configuration",
+  "Stakeholder Intake",
+  "Training and Documentation",
 ];
 
 export default function About() {
@@ -25,20 +32,20 @@ export default function About() {
         <AnimateIn delay={0}>
           <div className="max-w-2xl">
             <h2 className="text-4xl font-bold tracking-tight text-[#0F172A] mb-6 leading-tight">
-              Product Owner with a bias for clarity and delivery.
+              Product Manager with a bias for clarity and delivery.
             </h2>
             <div className="space-y-4 text-[#475569] leading-relaxed">
               <p>
-                I&apos;m a Product Owner with experience across enterprise health platforms and B2B SaaS, specializing in turning complex system and data workflows into clear, shippable product decisions.
+                I am a Product Manager with experience leading roadmaps, owning vendor relationships, and driving product discipline across enterprise SaaS and digital health platforms.
               </p>
               <p>
-                At PHSA I led delivery for CareConnect, BC&apos;s provincial clinical information system. The platform integrates health records across all BC health authorities, requiring precise stakeholder alignment, data integrity standards, and reliable cross-system delivery at scale.
+                At PHSA I led delivery for CareConnect, BC&apos;s provincial clinical information system, managing cross-system integrations, stakeholder alignment, and release readiness at scale.
               </p>
               <p>
-                At CheckingIn I own the full product lifecycle across a multi-module web and mobile platform. I drive roadmap priorities using customer interviews and usage data, and build prototypes to validate solutions before engineering handoff.
+                At CheckingIn I own the full product lifecycle across a multi-module platform, driving discovery through customer interviews and translating business needs into clear requirements and acceptance criteria.
               </p>
               <p>
-                I&apos;m comfortable in technical conversations, fluent in agile delivery, and focused on data quality and integration reliability as the foundation for everything else.
+                I am comfortable working across APIs, SaaS configurations, and connected systems, and I bring structure to teams that need stronger product management process, roadmap discipline, and documentation standards.
               </p>
             </div>
 

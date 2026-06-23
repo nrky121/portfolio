@@ -69,7 +69,7 @@ export default function Contact() {
             </div>
 
             <p className="text-sm text-slate-400 mb-8 leading-relaxed">
-              Product Owner at CheckingIn, actively exploring new opportunities in enterprise SaaS and AI-driven platforms.
+              Product Manager at CheckingIn, actively exploring new opportunities in enterprise SaaS and restaurant technology.
             </p>
 
             <div className="space-y-3">

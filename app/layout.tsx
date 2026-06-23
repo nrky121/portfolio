@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ryan Ngai | Product Owner",
-  description: "Product Owner with experience in enterprise SaaS, B2B platforms, and AI-driven product development.",
+  title: "Ryan Ngai | Product Manager",
+  description: "Product Manager with experience in enterprise SaaS, B2B platforms, and digital health platforms.",
 };
 
 export default function RootLayout({
