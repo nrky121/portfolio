@@ -9,16 +9,16 @@ const projects = [
     label: "Side Project",
     featured: true,
     title: "Closetrack",
-    tagline: "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks. The agent monitors Gmail via OAuth, matches incoming emails to open files, generates follow-up messages, and sends emails from the notary's own account automatically. Demonstrates end-to-end product thinking from customer discovery through requirements, build, and deployment.",
+    tagline: "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks. The agent monitors Gmail via OAuth every 30 minutes automatically and lets the notary trigger a manual sync anytime. It matches incoming emails to open files, generates follow-up messages, and sends emails from the notary's own account. Demonstrates end-to-end product thinking from customer discovery through requirements, build, and deployment.",
     tech: ["Agent-as-a-Service", "AI", "Gmail OAuth", "Supabase", "React", "Vite"],
     liveUrl: "https://notary-rosy.vercel.app",
     githubUrl: "https://github.com/nrky121/notary",
     summary:
-      "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks.",
+      "The problem was not that notaries did not know what to do. It was that they had no time to do it.",
     sections: [
       {
         heading: "The Problem",
-        body: "Independent notaries in BC manage 15 to 40 active closing files simultaneously. Tracking outstanding documents—signed deeds, title transfers, mortgage discharges—was manual, scattered across email threads, and easy to miss. There was no system keeping them on top of what needed to come back before a closing could complete.",
+        body: "Independent notaries in BC manage 15 to 40 active closing files simultaneously. Tracking outstanding documents - signed deeds, title transfers, mortgage discharges - was manual, scattered across email threads, and easy to miss. There was no system keeping them on top of what needed to come back before a closing could complete.",
       },
       {
         heading: "Customer Discovery",
