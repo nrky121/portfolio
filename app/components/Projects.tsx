@@ -12,7 +12,6 @@ const projects = [
     tagline: "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks. The agent monitors Gmail via OAuth every 30 minutes automatically and lets the notary trigger a manual sync anytime. It matches incoming emails to open files, generates follow-up messages, and sends emails from the notary's own account. Demonstrates end-to-end product thinking from customer discovery through requirements, build, and deployment.",
     tech: ["Agent-as-a-Service", "AI", "Gmail OAuth", "Supabase", "React", "Vite"],
     liveUrl: "https://notary-rosy.vercel.app",
-    githubUrl: "https://github.com/nrky121/notary",
     summary:
       "The problem was not that notaries did not know what to do. It was that they had no time to do it.",
     sections: [
@@ -230,28 +229,16 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {("liveUrl" in project || "githubUrl" in project) && (
+                {"liveUrl" in project && project.liveUrl && (
                   <div className="mt-3 flex gap-2" onClick={(e) => e.stopPropagation()}>
-                    {"liveUrl" in project && project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
-                      >
-                        View Live ↗
-                      </a>
-                    )}
-                    {"githubUrl" in project && project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
-                      >
-                        GitHub ↗
-                      </a>
-                    )}
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-medium text-[#64748B] border border-[#E2E8F0] px-3 py-1.5 rounded-lg hover:border-[#4F6EF7] hover:text-[#4F6EF7] transition-colors duration-200"
+                    >
+                      View Live ↗
+                    </a>
                   </div>
                 )}
               </button>
