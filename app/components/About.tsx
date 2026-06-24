@@ -1,21 +1,14 @@
 import AnimateIn from "./AnimateIn";
 
 const skills = [
-  "Product Discovery",
-  "Backlog Management",
-  "CRM & Data Models",
-  "Integration Workflows",
-  "API Literacy",
-  "Acceptance Criteria",
-  "Hands-On Prototyping",
-  "Enterprise SaaS",
   "Roadmap Development",
   "Vendor Management",
-  "Release Readiness",
-  "Business Requirements",
-  "SaaS Configuration",
   "Stakeholder Intake",
+  "Release Readiness",
+  "SaaS Configuration",
+  "Business Requirements",
   "Training and Documentation",
+  "API Literacy",
 ];
 
 export default function About() {
@@ -39,13 +32,7 @@ export default function About() {
                 I am a Product Manager with experience building product roadmaps and delivery strategies from scratch at the startup level and driving structured delivery on enterprise platforms.
               </p>
               <p>
-                At CheckingIn I built the full product roadmap and PM process from zero across a multi-module platform, establishing prioritization frameworks, stakeholder intake, and documentation standards where none previously existed.
-              </p>
-              <p>
-                At PHSA I drove product delivery for CareConnect, BC&apos;s provincial clinical information system, managing vendor relationships, EMR integrations, SaaS configurations, and cross-system delivery at scale.
-              </p>
-              <p>
-                I hold a Certified Scrum Product Owner certification and a Business Analysis Essentials certificate, and I bring structure to teams that need stronger product management process, roadmap discipline, and documentation standards.
+                At CheckingIn I built the full product roadmap and PM process from zero across a multi-module platform, establishing prioritization frameworks, stakeholder intake, and documentation standards where none previously existed. At PHSA I drove product delivery for CareConnect, BC&apos;s provincial clinical information system, managing vendor relationships, EMR integrations, SaaS configurations, and cross-system delivery at scale.
               </p>
             </div>
 
