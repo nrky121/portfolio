@@ -36,16 +36,16 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#475569] leading-relaxed">
               <p>
-                I am a Product Manager with experience leading roadmaps, owning vendor relationships, and driving product discipline across enterprise SaaS and digital health platforms.
+                I am a Product Manager with experience building product roadmaps and delivery strategies from scratch at the startup level and driving structured delivery on enterprise platforms.
               </p>
               <p>
-                At PHSA I led delivery for CareConnect, BC&apos;s provincial clinical information system, managing cross-system integrations, stakeholder alignment, and release readiness at scale.
+                At CheckingIn I built the full product roadmap and PM process from zero across a multi-module platform, establishing prioritization frameworks, stakeholder intake, and documentation standards where none previously existed.
               </p>
               <p>
-                At CheckingIn I own the full product lifecycle across a multi-module platform, driving discovery through customer interviews and translating business needs into clear requirements and acceptance criteria.
+                At PHSA I drove product delivery for CareConnect, BC&apos;s provincial clinical information system, managing vendor relationships, EMR integrations, SaaS configurations, and cross-system delivery at scale.
               </p>
               <p>
-                I am comfortable working across APIs, SaaS configurations, and connected systems, and I bring structure to teams that need stronger product management process, roadmap discipline, and documentation standards.
+                I hold a Certified Scrum Product Owner certification and a Business Analysis Essentials certificate, and I bring structure to teams that need stronger product management process, roadmap discipline, and documentation standards.
               </p>
             </div>
 

@@ -9,9 +9,9 @@ const experience = [
     description:
       "B2B SaaS care coordination and workflow platform supporting intake, referral, facility matching, and treatment pathway management.",
     bullets: [
-      "Owned and maintained product roadmap across multiple modules, balancing stakeholder input, technical constraints, and business priorities to drive sequencing and release planning.",
-      "Developed PRDs, user stories, and acceptance criteria to bring product management discipline and documentation standards to an early-stage team.",
-      "Led discovery through customer interviews and usage data, translating business needs into clear requirements and solution recommendations for engineering handoff.",
+      "Built the product roadmap from scratch across a multi-module platform with no prior roadmap structure in place, establishing the first prioritization framework, stakeholder intake process, and release planning cadence from the ground up.",
+      "Established the first formal PM process for the team including PRDs, user stories, acceptance criteria, and definition of done, bringing documentation discipline and product management structure where none previously existed.",
+      "Led discovery through customer interviews and usage data, translating ambiguous business needs into clear requirements and solution recommendations for engineering handoff.",
       "Managed release readiness, QA, and sprint execution across distributed teams, reducing development rework through earlier validation and tighter scope definition.",
       "Built prototypes directly to validate solutions with stakeholders before engineering handoff, improving alignment and reducing ambiguity on complex workflows.",
     ],
@@ -24,11 +24,11 @@ const experience = [
     description:
       "Enterprise digital health organization delivering clinical platforms and services across British Columbia.",
     bullets: [
-      "Built and maintained product roadmaps for CareConnect, aligning clinical, operational, and technical stakeholders across all BC health authorities on priorities, constraints, and release timelines.",
-      "Conducted business analysis across complex clinical workflows, developing requirements documentation, process maps, and testing artifacts to support cross-system integrations and platform enhancements.",
-      "Collaborated with engineering on cross-system health authority integrations, ensuring data consistency, reliable sync, and alignment with downstream system requirements.",
-      "Led vendor coordination on platform updates, SLA management, and feature prioritization, ensuring third-party capabilities aligned with business needs and operational constraints.",
-      "Coordinated rollout planning, training material development, and cross-functional stakeholder alignment across clinical, operational, and technical groups province-wide.",
+      "Drove product delivery and roadmap contributions for CareConnect, BC's provincial clinical information system, aligning clinical, operational, and technical stakeholders across all health authorities on priorities, constraints, and release timelines.",
+      "Managed vendor and third party relationships for EMR integrations, owning feature prioritization, SLA oversight, incident management, and contract coordination to ensure platform reliability and alignment with clinical business needs.",
+      "Configured and maintained CareConnect as a provincial SaaS platform, managing system updates, release readiness, QA testing, and configuration changes across interconnected health authority systems.",
+      "Conducted business analysis across complex clinical workflows, developing requirements documentation, SOPs, training materials, and testing artifacts to support cross-system integrations and onboard clinical users province-wide.",
+      "Coordinated rollout planning, user adoption, and cross-functional stakeholder alignment across clinical, operational, and technical groups, reducing manual coordination and duplicate data entry by 30 percent.",
     ],
   },
   {
