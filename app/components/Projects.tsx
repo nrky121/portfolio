@@ -263,10 +263,11 @@ export default function Projects() {
                   </p>
                   {project.id === "closetrack" && (
                     <div className="-mx-7 mb-10">
-                      {/* Replace with Closetrack GIF once recorded */}
-                      <div className="w-full h-64 bg-[#F1F5F9] border border-[#E2E8F0] flex items-center justify-center">
-                        <p className="text-[#94A3B8] text-sm">Closetrack demo coming soon</p>
-                      </div>
+                      <img
+                        src="/closetrack.gif"
+                        alt="Closetrack agent demo"
+                        className="w-full max-h-[600px] object-contain rounded-xl"
+                      />
                     </div>
                   )}
                   {project.id === "careconnect" && (
