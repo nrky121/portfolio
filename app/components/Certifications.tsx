@@ -18,7 +18,7 @@ const certs = [
   {
     title: "Business Analysis Essentials",
     abbr: "BAE",
-    issuer: "BCIT",
+    issuer: "Global Knowledge",
     highlight: false,
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
