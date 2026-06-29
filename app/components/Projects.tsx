@@ -98,11 +98,10 @@ const projects = [
     label: "Side Project",
     featured: true,
     title: "Simple CRM",
-    tagline: "Built a functional CRM from scratch using Next.js, Prisma, Supabase, and TypeScript. The goal was to deeply understand the workflow problems enterprise CRM platforms solve before evaluating build vs buy decisions in a product context.",
+    tagline: "Built a functional CRM from scratch using Next.js, Prisma, Supabase, and TypeScript as a hands-on way to stay sharp on full-stack product development and understand what engineers are building when I write requirements.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     liveUrl: "https://simple-crm-pearl.vercel.app/",
-    summary:
-      "Built a working CRM from scratch for a family member's small business, then realized it gave me ground-level understanding of the exact problem Riva solves at enterprise scale.",
+    summary: "",
     sections: [
       {
         heading: "The Problem",
@@ -241,9 +240,11 @@ export default function Projects() {
 
               {expanded === project.id && (
                 <div className="border-t border-[#EEF2FF] px-7 py-8 bg-[#F8FAFC]">
+                  {project.summary && (
                   <p className="text-[#1E293B] mb-10 text-base leading-relaxed font-medium border-l-4 border-[#4F6EF7] pl-4 bg-[#EEF2FF]/50 py-3 pr-4 rounded-r-xl">
                     {project.summary}
                   </p>
+                  )}
                   {project.id === "closetrack" && (
                     <div className="-mx-7 mb-10">
                       <img
