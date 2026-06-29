@@ -40,19 +40,6 @@ export default function About() {
             </div>
 
             <div className="mt-5 flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#4F6EF7] bg-[#EEF2FF] border border-[#C7D2FE] px-3 py-2 rounded-full">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0L6.12 3.38H9.51L6.81 5.49L7.94 8.87L5 6.76L2.06 8.87L3.19 5.49L0.49 3.38H3.88L5 0Z"/></svg>
-                Certified Scrum Product Owner
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#64748B] bg-white border border-[#E2E8F0] px-3 py-2 rounded-full">
-                Business Analysis Essentials
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#64748B] bg-white border border-[#E2E8F0] px-3 py-2 rounded-full">
-                BA (Econ), UBC
-              </span>
-            </div>
-
-            <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <span
                   key={skill}
