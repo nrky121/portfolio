@@ -21,7 +21,7 @@ const projects = [
       },
       {
         heading: "Customer Discovery",
-        body: "Started with discovery interviews with practicing notaries to validate the gap. Confirmed that follow-up tracking was a real pain point consuming significant time and causing stress during busy periods. Used those interviews to define the core workflow before writing a line of code.",
+        body: "Started with discovery interviews with practicing notaries to validate the gap. Confirmed that follow-up tracking was a real pain point consuming significant time and causing stress during busy periods. Used those interviews to define the core workflow before the build.",
       },
       {
         heading: "What I Built",
@@ -119,10 +119,6 @@ const projects = [
       {
         heading: "What I Learned",
         body: "Building something real rather than just describing it changes how you think about the problem. I now understand what it actually takes to keep relationship data clean and consistent, and why that gets exponentially harder when you try to sync it across multiple systems. That is exactly the problem Riva solves.",
-      },
-      {
-        heading: "Connection to Riva",
-        body: "Riva's core value prop is that CRM data should be trusted and automatically captured across email, calendar, and CRM systems. I built a CRM to understand what that data looks like at the model level, how it breaks, and why clean data matters so much to the people using it. That gives me product intuition for Riva's problem space that goes beyond surface familiarity.",
       },
     ],
   },
