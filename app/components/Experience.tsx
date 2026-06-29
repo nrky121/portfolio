@@ -13,7 +13,8 @@ const experience = [
       "Established the first formal PM process for the team including PRDs, user stories, acceptance criteria, and definition of done, bringing documentation discipline and product management structure where none previously existed.",
       "Led discovery through customer interviews and usage data, translating ambiguous business needs into clear requirements and solution recommendations for engineering handoff.",
       "Managed release readiness, QA, and sprint execution across distributed teams, reducing development rework through earlier validation and tighter scope definition.",
-      "Built prototypes directly to validate solutions with stakeholders before engineering handoff, improving alignment and reducing ambiguity on complex workflows.",
+      "Built Figma prototypes directly to validate solutions with stakeholders before engineering handoff, improving alignment and reducing ambiguity on complex workflows.",
+      "Managed sprint ceremonies and backlog refinement in Jira, maintaining a prioritized backlog of user stories, bugs, and enablers across 5 platform modules.",
     ],
   },
   {
@@ -29,18 +30,19 @@ const experience = [
       "Configured and maintained CareConnect as a provincial SaaS platform, managing system updates, release readiness, QA testing, and configuration changes across interconnected health authority systems.",
       "Conducted business analysis across complex clinical workflows, developing requirements documentation, SOPs, training materials, and testing artifacts to support cross-system integrations and onboard clinical users province-wide.",
       "Coordinated rollout planning, user adoption, and cross-functional stakeholder alignment across clinical, operational, and technical groups, reducing manual coordination and duplicate data entry by 30 percent.",
+      "Ensured clinical data integrity and patient record accuracy across CareConnect's cross-health-authority data flows, supporting compliant handling of PHI across all BC health authorities.",
     ],
   },
   {
     company: "Co.Lab",
-    role: "Product Manager",
+    role: "Product Management Apprenticeship",
     period: "Jul 2023 – Apr 2024",
     subtitle: "Concurrent with PHSA role",
     current: false,
     description:
       "Early-stage product accelerator building SaaS and mobile products through collaborative product development.",
     bullets: [
-      "Owned backlog refinement, sprint planning, and acceptance criteria for early-stage SaaS and mobile products.",
+      "Owned backlog refinement, sprint planning, and acceptance criteria across 2 early-stage SaaS and mobile products within a cross-functional team of 6.",
       "Supported user acceptance testing and release readiness, reducing post-release defects by 20%.",
       "Improved sprint throughput and delivery consistency by 20% through better scope definition and sequencing.",
     ],

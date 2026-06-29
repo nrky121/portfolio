@@ -9,8 +9,8 @@ const projects = [
     label: "Side Project",
     featured: true,
     title: "Closetrack",
-    tagline: "Built an AI-powered follow-up agent for independent notaries in BC from zero to live deployment. Started with customer discovery interviews, identified a real gap in how notaries track outstanding documents across 15 to 40 active closing files, and shipped a working product in two weeks. The agent monitors Gmail via OAuth every 30 minutes automatically and lets the notary trigger a manual sync anytime. It matches incoming emails to open files, generates follow-up messages, and sends emails from the notary's own account. Demonstrates end-to-end product thinking from customer discovery through requirements, build, and deployment.",
-    tech: ["Agent-as-a-Service", "AI", "Gmail OAuth", "Supabase", "React", "Vite"],
+    tagline: "Built an AI-powered follow-up agent for BC notaries from discovery to live deployment in 2 weeks. Conducted customer discovery interviews with practicing notaries, identified a real gap in document tracking across 15 to 40 active files, and shipped a working product. Demonstrates end-to-end product ownership: problem validation, requirements, build, and deployment.",
+    tech: ["Agent-as-a-Service", "AI", "Gmail OAuth", "Supabase", "React", "Vite", "Customer Discovery", "0 to 1 Product"],
     liveUrl: "https://notary-rosy.vercel.app",
     summary:
       "The problem was not that notaries did not know what to do. It was that they had no time to do it.",
@@ -38,8 +38,8 @@ const projects = [
     label: "PHSA",
     featured: false,
     title: "CareConnect",
-    tagline: "BC's provincial clinical information system giving clinicians a single view of patient health records across all health authorities. Owned roadmap, stakeholder intake, requirements documentation, and cross-system integration delivery at scale.",
-    tech: ["Roadmap Ownership", "Vendor Management", "Requirements Documentation", "Cross-system Integration"],
+    tagline: "BC's provincial clinical information system, serving clinicians across all health authorities. Owned roadmap contributions, vendor relationships for EMR integrations, SaaS configuration, and cross-system release delivery at scale. Managed 3+ years of iterative delivery on a platform touching clinical care for millions of BC residents.",
+    tech: ["Roadmap Ownership", "Requirements Documentation", "Enterprise SaaS", "Digital Health", "EMR Integration", "Stakeholder Management", "Vendor Management"],
     summary:
       "Led product strategy and delivery for CareConnect, BC's provincial clinical information system. Clinicians across all health authorities use it as their single, secure point of access to patient health data regardless of where in the province that care was delivered.",
     sections: [
@@ -66,8 +66,8 @@ const projects = [
     label: "CheckingIn",
     featured: false,
     title: "Intake and Onboarding Workflows",
-    tagline: "Drove discovery, requirements documentation, and delivery across the mobile app and web platform at CheckingIn. Led stakeholder intake, roadmap prioritization, and release readiness for operational workflow improvements.",
-    tech: ["Mobile App", "Web Platform", "User Research", "Prototyping", "Conversion Optimization"],
+    tagline: "Led discovery, requirements, and delivery for intake and onboarding workflows across CheckingIn's mobile app and web platform. Wrote 300+ user stories and 20+ PRDs from scratch, established the first formal PM process for the team, and shipped across 5 platform modules. Built and validated Figma prototypes directly with stakeholders before engineering handoff.",
+    tech: ["Mobile App", "Web Platform", "User Research", "Prototyping", "Conversion Optimization", "Figma", "PRD", "User Stories", "Backlog Management"],
     summary:
       "CheckingIn is a mobile and web platform serving Indigenous communities, combining a culture app with a care navigation tool supporting detox, treatment, and aftercare pathways. I drove roadmap priorities using customer interviews and usage data, building prototypes directly to validate solutions before engineering handoff.",
     images: [
@@ -98,7 +98,7 @@ const projects = [
     label: "Side Project",
     featured: true,
     title: "Simple CRM",
-    tagline: "Built a CRM from scratch to understand the problem Riva solves at scale.",
+    tagline: "Built a functional CRM from scratch using Next.js, Prisma, Supabase, and TypeScript. The goal was to deeply understand the workflow problems enterprise CRM platforms solve before evaluating build vs buy decisions in a product context.",
     tech: ["Next.js", "Prisma", "Supabase", "TypeScript"],
     liveUrl: "https://simple-crm-pearl.vercel.app/",
     summary:

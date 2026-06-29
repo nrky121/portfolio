@@ -30,8 +30,7 @@ export default function Hero() {
         </h1>
 
         <p className="fade-up fade-up-delay-3 text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed mb-12">
-          I turn integration complexity into products
-          <br className="hidden md:block" /> that enterprise teams actually trust.
+          I turn complex workflows into products that teams actually ship and users actually trust.
         </p>
 
         <div className="fade-up fade-up-delay-4 flex flex-wrap items-center gap-4">
@@ -57,8 +56,8 @@ export default function Hero() {
           {[
             { value: "4+", label: "Years in Product" },
             { value: "300+", label: "User Stories Shipped" },
-            { value: "5", label: "Modules Owned" },
-            { value: "CSPO", label: "Certified Scrum Product Owner" },
+            { value: "3", label: "Enterprise Platforms" },
+            { value: "2", label: "Certifications" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-2xl font-bold text-white">{stat.value}</p>

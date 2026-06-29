@@ -20,7 +20,7 @@ export default function Contact() {
               Let&apos;s talk.
             </h2>
             <p className="text-slate-400 leading-relaxed mb-10 text-lg">
-              I&apos;m open to product roles at companies building enterprise SaaS, data infrastructure, or AI-driven workflow tools. If you&apos;re working on something that makes complex operations feel simple, I&apos;d love to connect.
+              I&apos;m open to PM and Product Owner roles across enterprise SaaS, digital health, B2B platforms, and AI-driven workflow products. Based in Vancouver, open to remote and hybrid.
             </p>
 
             <div className="space-y-4">
@@ -69,13 +69,13 @@ export default function Contact() {
             </div>
 
             <p className="text-sm text-slate-400 mb-8 leading-relaxed">
-              Product Manager at CheckingIn, actively exploring new opportunities in enterprise SaaS and restaurant technology.
+              PM at CheckingIn, actively exploring new opportunities.
             </p>
 
             <div className="space-y-3">
               {[
                 { icon: "📍", label: "Based in Canada, Remote-friendly" },
-                { icon: "🎯", label: "Focus: Enterprise SaaS, B2B, AI" },
+                { icon: "🎯", label: "Focus: Enterprise SaaS, B2B, Digital Health, AI" },
                 { icon: "⚡", label: "Open to: TPO, PM, Sr. PM roles" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3 text-sm text-slate-400 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
