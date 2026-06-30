@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimateIn from "./AnimateIn";
 
 const projects = [
@@ -126,6 +126,11 @@ const projects = [
 export default function Projects() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) setExpanded(hash);
+  }, []);
+
   return (
     <section id="projects" className="pt-10 pb-16 px-6 bg-white">
       <div className="max-w-[1200px] mx-auto">
@@ -146,6 +151,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 100}>
             <div
+              id={project.id}
               className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                 expanded === project.id
                   ? "border-[#4F6EF7] shadow-lg shadow-[#4F6EF7]/10"
