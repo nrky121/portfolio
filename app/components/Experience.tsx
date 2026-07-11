@@ -19,7 +19,7 @@ const experience = [
   },
   {
     company: "Provincial Health Services Authority",
-    role: "Team Lead & Product Manager / Business Analyst",
+    role: "Team Lead/Product Manager & Business Analyst",
     period: "Apr 2022 – Mar 2025",
     current: false,
     description:
